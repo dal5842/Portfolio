@@ -1,0 +1,46 @@
+start = root
+root = element root {MetaData, content, closing}
+
+MetaData = element MetaData {DocTitle, citation, evidence}
+
+DocTitle = element DocTitle {PoemTitle, author, year}
+PoemTitle = element PoemTitle {text, rend*}
+author = element author {text}
+year = element year {text}
+
+citation = element citation {mixed { (author | PT | date | archieve)* } }
+PT = element PT {text}
+date = element date {text}
+archieve = element archieve {text}
+
+evidence = element evidence {mixed { (stamp | description | coverage) } }
+stamp = element stamp {mixed { (shape | color | pos | description | text1 | image | coverage)* } }
+shape = attribute shape {"circular"}
+color = attribute color {"red"}
+
+description = element description {mixed { (text1 | image )* } }
+text1 = element text1 {pos, text}
+pos = attribute pos {text}
+image = element image {pos, text}
+coverage = element coverage {text}
+
+content = element content {mixed { (writer | PoemTitle | author | poem)* }}
+writer = attribute writer {text}
+
+rend = attribute rend {text}
+
+poem = element poem {lines, ln+}
+lines = attribute lines {xsd:integer}
+ln = element ln {mixed{ (l | line | rhy | rend | RepWord | SentEnd | rhyme | RepLine | under)* } }
+l = attribute l {xsd:integer}
+line = attribute line {xsd:integer}
+rhy = attribute rhy {text}
+
+RepWord = element RepWord {mixed { (SentEnd | rhyme | line)* } }
+SentEnd = element SentEnd {text}
+rhyme = element rhyme {mixed { (rhyme | rhy)* } }
+RepLine = element RepLine {mixed { (SentEnd | rhyme | under | line)* } }
+under = element under {mixed { (rhyme | rend)* } }
+
+closing = element closing {mixed { (location | date)* } }
+location = element location {text}
