@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Relax%20NG/love_RNC2_2024-09-20.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <!-- changes from original
+        
+         add specifics to ryhmes on the sounds (ex. "an" on man and land) - check
+         add something about the repetition words/lines (ex. booker t) - check
+         add a thing in the poem tag about the number of lines - check
+         add something about the sentence endings - check
+         add a date tag to the date in the metadata - check
+         remove stanzas - check 
+         add a attribute about the lib of congress stamp on the lines - check
+         
+         //element => count()
+         
+         PT = poem title
+         rhy = rhyme
+         rep = repitition
+         SentEnd = sentence end
+         -->
+    
+    
+    <MetaData>
+       
+        <DocTitle>
+        <PoemTitle>"Ballad of Booker T.,"</PoemTitle>
+        <author> by Langston Hughes,</author>
+        <year> June 1, 1941</year></DocTitle>
+        <citation>Citation: Drafts of <author>Langston Hughes's</author> poem <PT>"Ballad of Booker T.,"</PT> 30 <date>May–1 June 1941</date>. (Langston Hughes Collection) Manuscript Division, <archieve>Library of Congress</archieve>, Washington, D.C.</citation>
+    <evidence>
+        <stamp shape="circular" color="red"><description><text1 pos="circle around outside">Library of Congress</text1><image pos="center">eagle</image></description><coverage>The stamp covers lines 5 through 9, overtop words "bucket, here, yourself, man"</coverage>
+        </stamp>
+    </evidence>
+    
+    </MetaData>
+    
+    <content writer="LH"><PoemTitle rend="underline">BALLAD OF BOOKER T.</PoemTitle><author> by
+    Langston Hughes</author>
+    
+    
+    <poem lines="47">
+    <ln l="1"><RepWord line="32">Booker T<SentEnd>.</SentEnd></RepWord></ln>
+    <ln l="2">Was a <RepWord line="41">practical <rhyme rhy="an">man</rhyme></RepWord><SentEnd>.</SentEnd></ln>
+    <ln l="3">He said, Till the soil</ln>
+    <ln l="4">And learn from the <rhyme rhy="an">land</rhyme><SentEnd>.</SentEnd></ln>
+    <ln l="5"><RepLine line="46">Let down your bucket</RepLine></ln>
+    <ln l="6"><RepLine line="47">Where you <rhyme rhy="ar">are</rhyme><SentEnd>.</SentEnd></RepLine></ln>
+    <ln l="7"><RepLine line="44">Your fate is here</RepLine></ln>
+    <ln l="8"><RepLine line="45">And not <rhyme rhy="ar">afar</rhyme><SentEnd>.</SentEnd></RepLine></ln>
+    <ln l="9">To help yourself</ln>
+    <ln l="10">And your fellow <rhyme rhy="an">man</rhyme>,</ln>
+    <ln l="11">Train your head,</ln>
+    <ln l="12"><RepLine line="43">Your heart, <under rend="underline">and your <rhyme rhy="an">hand</rhyme></under><SentEnd>.</SentEnd></RepLine></ln>
+    <ln l="13">For smartness alone's</ln>
+    <ln l="14">Surely not <rhyme rhy="eet">meet</rhyme>—</ln>
+    <ln l="15">If you haven't at the same time </ln>
+    <ln l="16">Got something to <rhyme rhy="eat">eat</rhyme><SentEnd>.</SentEnd></ln>
+    <ln l="17">Thus at Tuskegee</ln>
+    <ln l="18">He built a <rhyme rhy="ool">school</rhyme></ln>
+    <ln l="19">With book-learning there</ln>
+    <ln l="20">And the workman's <rhyme rhy="ool">tool</rhyme><SentEnd>.</SentEnd></ln>
+    <ln l="21">He started out</ln>
+    <ln l="22">In a simple <rhyme rhy="ay">way</rhyme>—</ln>
+    <ln l="23">For yesterday</ln>
+    <ln l="24">Was <under rend="underline">not</under> <rhyme rhy="ay">today</rhyme><SentEnd>.</SentEnd></ln>
+    <ln l="25">Sometimes he had </ln>
+    <ln l="26">Compromise in his <rhyme rhy="alk">talk</rhyme>—</ln>
+    <ln l="27">For a man must crawl</ln>
+    <ln l="28">Before he can <rhyme rhy="alk">walk</rhyme>—</ln>
+    <ln l="29">And in Alabama in '85</ln>
+    <ln l="30">A joker was <rhyme rhy="cky">lucky</rhyme></ln>
+    <ln l="31">To be alive.</ln>
+    <ln l="32">But <rhyme rhy="t"> Booker T</rhyme><SentEnd>.</SentEnd></ln>
+    <ln l="33">Was nobody's <rhyme rhy="ool">fool</rhyme>:</ln>
+    <ln l="34">You may carve a dream</ln>
+    <ln l="35">With an humble <rhyme rhy="ool">tool</rhyme><SentEnd>.</SentEnd></ln>
+    <ln l="36">The tallest tower</ln>
+    <ln l="37">Can tumble <rhyme rhy="own">down</rhyme></ln>
+    <ln l="38">If it be not rooted</ln>
+    <ln l="39">In solid <rhyme rhy="ound">ground</rhyme><SentEnd>.</SentEnd></ln>
+    <ln l="40">So, being a far-seeing</ln>
+    <ln l="41">Practical <rhyme rhy="an">man</rhyme>,</ln>
+    <ln l="42">He said, Train your head,</ln>
+    <ln l="43">Your heart, <under rend="underline">and your <rhyme rhy="an">hand</rhyme></under><SentEnd>.</SentEnd></ln>
+    <ln l="44">Your fate is here</ln>
+    <ln l="45">And not <rhyme rhy="ar">afar</rhyme>,</ln>
+    <ln l="46">So let down your bucket </ln>
+    <ln l="47">Where you <rhyme rhy="ar">are</rhyme><SentEnd>.</SentEnd></ln>
+    </poem></content>
+    
+    <closing>LANGSTON HUGHES Final Draft,
+    <location>Hollow Hills Farm, Monterey, California</location>, <date>June 1, 1941</date>.</closing>
+    
+</root>
