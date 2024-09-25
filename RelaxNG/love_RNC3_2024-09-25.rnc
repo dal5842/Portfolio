@@ -1,0 +1,14 @@
+start = root
+root = element root {title, writer, song}
+
+title = element title {text}
+
+writer = element writer {text}
+
+song = element song {mixed { (versus, chorus)* } }
+versus = element versus {ln+, text}
+ln = element ln {n, text}
+n = attribute n {xsd:integer}
+
+chorus = element chorus {ln+, cr*, text}
+cr = attribute cr {text}

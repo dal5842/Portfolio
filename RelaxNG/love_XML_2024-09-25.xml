@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dal: 
+     ln = line
+     n = line number
+     cr = chorus repeat
+     
+-->
+<?xml-model href="love_RNC3_2024-09-25.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <title>Don't Wanna Go To Heaven</title>
+    <writer>Nate Smith</writer>
+    <song>
+        <versus><ln n="1">It's that tin roof rain on a Sunday morning</ln>
+    <ln n="2">It's your grandma's cross around your neck</ln>
+    <ln n="3">It's that sunrise glowing through the blinds in the window</ln>
+    <ln n="4">The kind that always steal my breath</ln>
+    <ln n="5">Why would I ever wanna leave?</ln></versus>
+    <chorus cr="yes"><ln n="6">I don't wanna go to Heaven</ln>
+    <ln n="7">When Heaven's right here lying next to me</ln>
+    <ln n="8">I count every kiss and every blessing</ln>
+    <ln n="9">As the only proof I'll ever need</ln>
+    <ln n="10">I don't wanna go to Heaven</ln>
+    <ln n="11">When Heaven's right here lying next to me</ln></chorus>
+    <versus><ln n="12">It's like that old dirt road was paved in gold</ln>
+    <ln n="13">The pearly gates are our front porch</ln>
+    <ln n="14">Loving you makes me believe</ln>
+    <ln n="15">Even if the good Lord don't let me in, I got a glimpse</ln>
+    <ln n="16">Of what it could've been, so</ln></versus>
+    <chorus cr="yes"><ln n="17">I don't wanna go to Heaven</ln>
+    <ln n="18">When Heaven's right here lying next to me</ln>
+    <ln n="19">I count every kiss and every blessing</ln>
+    <ln n="20">As the only proof I'll ever need</ln>
+    <ln n="21">I don't wanna go to Heaven</ln>
+    <ln n="22">When Heaven's right here lying next to me</ln>
+    <ln n="23">Oh, oh, oh, oh, oh, oh</ln>
+    <ln n="24">Lying next to me</ln>
+    <ln n="25">Oh-oh-oh, whoa</ln></chorus>
+    <versus><ln n="26">And I don't wanna go to Heaven</ln>
+    <ln n="27">When Heaven's right here lying next to me</ln>
+    <ln n="28">I count every kiss and every blessing</ln>
+    <ln n="29">he only proof I'll ever need, yeah</ln></versus>
+    <chorus cr="yes"><ln n="30">I don't wanna go to Heaven</ln>
+    <ln n="31">When Heaven's right here next to me</ln>
+    <ln n="32">I count every kiss and every blessing</ln>
+    <ln n="33">As the only proof I'll ever need</ln>
+    <ln n="34">I don't wanna go to Heaven</ln>
+    <ln n="35">When Heaven's right here lying next to me (oh, oh, oh, oh, oh, oh)</ln>
+    <ln n="36">Lying next to me (oh, oh, oh, oh, oh, oh)</ln></chorus>
+    </song>
+</root>
