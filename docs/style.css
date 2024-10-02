@@ -1,0 +1,55 @@
+body{font-family: arial, helvetica, sans-serif;}
+
+p {padding:2em; line-height:2.5em;}
+
+body section{
+    margin:auto;
+    padding:2em;
+
+   display:flex;
+}
+
+figcaption {
+font-style: italic; 
+font-size: smaller;
+}
+
+img{max-width:600px; width:100%}
+
+ol {list-style-type: lower-alpha;
+padding: 4em;
+    
+}
+
+ul {list-style-type: lower-alpha;
+padding: 4em;
+    
+}
+
+nav {background-color:DarkSeaGreen;
+ display:flex;
+ 
+ }
+ 
+ nav > ul.menuB {
+ list-style-type: none;
+flex:10;
+  
+}
+
+nav ul.menuB li {
+  display:inline;
+  font-size: 2vw; 
+  padding-left:2vw;
+  padding-right:2vw;
+  padding-top:6vw;
+  padding-bottom:10vw;
+
+
+}
+
+nav#menu {padding:2vw; }
+ 
+.button { border:2px; border-style:solid; border-color:DarkSlateBlue; padding:2vw; background-color:DarkSlateGray; color:CadetBlue; width:10%; display:inline;
+ border-radius: 20px;
+ }
