@@ -1,9 +1,9 @@
 /* General Styling */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Comic Sans MS', 'Trebuchet MS', sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: MediumSlateBlue; /* Default background color */
+    background-color: MediumSlateBlue; 
     color: #333;
     line-height: 1.6;
 }
@@ -14,29 +14,33 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Fredoka One', 'Comic Sans MS', cursive; 
     text-align: center;
     color: #fff;
 }
 
 h1 {
     margin-top: 1em;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 h2,
 h3 {
     margin-top: 1.5em;
+    font-size: 2.5em;
 }
 
 h4,
 h5,
 h6 {
     margin-bottom: 1em;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: Black;
 }
 
 /* Styling paragraphs with borders and fun effects */
 p {
+    font-family: 'Trebuchet MS', sans-serif;
     padding: 2em;
     line-height: 1.8;
     font-size: 1.1em;
@@ -64,13 +68,16 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 2vw;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
+    text-align: center;
 }
 
 nav ul li a {
+    font-family: 'Pacifico', 'Comic Sans MS', cursive; 
     text-decoration: none;
     color: white;
     background-color: DarkSlateGray;
@@ -78,14 +85,23 @@ nav ul li a {
     border-radius: 5px;
     transition: background-color 0.3s;
     font-size: 1.2em;
+    text-align: center;
 }
 
 nav ul li a:hover {
     background-color: SkyBlue;
 }
 
+hr {
+    border: 0;
+    height: 4px;
+    background: linear-gradient(to right, DimGrey, Black);
+    margin: 2em 0;
+}
+
 /* Button Styling */
 .button {
+    font-family: 'Fredoka One', 'Comic Sans MS', cursive;
     border: 2px solid DarkSlateBlue;
     padding: 1em 2em;
     background-color: DarkSlateGray;
@@ -125,7 +141,6 @@ ol li {
 }
 
 /* Dear Data Styling */
-/* Centering and styling the figures and images in the gallery */
 figure.dearData {
     display: flex;
     justify-content: center;
@@ -173,7 +188,6 @@ iframe.thingLink {
     text-align: center;
 }
 
-/* Resume Specific Styles */
 .resume-header {
     color: MediumSlateBlue;
     text-align: center;
@@ -197,6 +211,26 @@ h5 {
     margin: 5px 0;
 }
 
+/* Text Pattern Page */
+.text-patterns figure img {
+    max-width: 350px;
+    border-color: Plum;
+}
+
+.text-pattern-img img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border: 5px solid #ff6347;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 99, 71, 0.7);
+}
+
+.text-pattern-img img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 99, 71, 0.7);
+}
+
 /* Figure and Image Styling */
 figure {
     margin: 2em auto;
@@ -209,16 +243,23 @@ img {
     max-width: 300px;
     width: 100%;
     height: auto;
+    border-color: Plum;
     border-radius: 10px;
     border: 5px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 figcaption {
     font-style: italic;
     font-size: smaller;
-    color: White;
+    color: Plum;
     margin-top: 0.5em;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Section Styling */
