@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Textual Patterns</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body {
+                background: SteelBlue;
+            }</style>
+    </head>
+    <body class="text-patterns">
+        <h1> Dannika Love's Website (Portfolio) </h1>
+        <nav class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="textPatterns.html">Text Patterns</a></li>
+                <li><a href="gameAnalysis.html">Game Analysis</a></li>
+            </ul>
+        </nav>
+        <h2>Game Analysis</h2>
+        <h2></h2>
+    </body>
+</html>
