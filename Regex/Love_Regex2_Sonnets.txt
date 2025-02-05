@@ -13,8 +13,8 @@
 <line>*** START OF THIS PROJECT GUTENBERG EBOOK SHAKESPEARE'S SONNETS ***</line>
 <line>Produced by Joseph S. Miller and Embry-Riddle Aeronautical</line>
 <line>University Library. HTML version by Al Haines.</line>
-<line>THE SONNETS</line>
-<line>by William Shakespeare</line>
+<Title>THE SONNETS</Title>
+<Author>by William Shakespeare</Author>
 <line>  I</line>
 <line>  From fairest creatures we desire increase,</line>
 <line>  That thereby beauty's rose might never die,</line>

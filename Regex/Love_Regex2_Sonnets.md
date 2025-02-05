@@ -24,7 +24,7 @@ No results where found from these three find and replace
 1. `\1` re-inserts the found text within <line> tags
 
 ## Convert Roman Numerals to <sonnet number="X"> Format (I am having issues with this one)
-1. Find `<line>([IVXLCDM]+)</line>` replace `</sonnet>\n<sonnet number="\1">`
+1. Find `<line>([IVXLC]+)</line>` replace `</sonnet>\n<sonnet number="\1">`
 
 ### Explanation
 1. I though the find would work but it does not.
@@ -37,3 +37,22 @@ No results where found from these three find and replace
 
 ## Lastly 
 1. Manualing entering the root, author and title tags
+
+
+## In Class note fixes
+
+### Blank lines
+1. Find `\n{2,}` replace `\n\n`
+
+### Leading Spaces
+1. Find `^\s{2}(\s*\w)` replace `\1`
+
+### Romain numerials
+1. Find `^\s*([IVXLC]+)$` replace `</sonnet><sonnet n="\1">`
+
+### Adding line tags
+1. Find `^[^<]+?$` replace `<line>\0</line>`
+
+### Adding root
+1. Find `.+` replace `<xml>\0</xml>`
+1. make sure dot matches all is on
