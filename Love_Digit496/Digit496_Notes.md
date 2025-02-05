@@ -1,7 +1,7 @@
 # Digit 496 Notes:
 
 
-### Installing homebrew :
+## Installing homebrew :
 
 
 1.  Installing homebrew is for downloading java on your personal computer.
@@ -17,8 +17,41 @@
 * lastly run this line : `eval "$(/opt/homebrew/bin/brew shellenv)"`
 
 
-### Installing Java
+## Installing Java
 1. To install java on your computer you must have homebrew installed first but if that is done you will type this command in the terminal to start the install process of java : `brew install openjdk`
 
 
-### Setting up an 
+## Setting up an alias
+### Getting to zshell
+
+1. `cd` 
+1. `ls - lisa`
+1. `nano .zshrc`
+
+### Making alias
+
+1. Example : `export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+alias github="cd /Users/dannikalove/Documents/Github"`
+
+### Getting out of zshell 
+
+1. 1. type : control X
+1. 1. type : shift Y
+1. 1. type : return/enter
+
+
+## Installing Bat
+1. Make sure to `cd` your terminal first
+1. Type `brew install bat`
+1. After installing at the ending of the install it will say where it was installed to. With collaboration from other testers we have found that bat will install to different location mine was `zsh completions have been installed to:  /opt/homebrew/share/zsh/site-functions` 
+
+
+## Installing coffeepot
+
+When downloading coffeepot for mac user your computer will give you a malware error that you will need to bypass to continue the install process.
+1. Go to your little apple icon
+1. Hit system settings
+1. Then go to your privacy and security page
+1. Once there scroll down to the bottom to the security section which will say something only the lines of "'coffeepot' was blocked to protect your mac" then have a 'allow anyway' or 'open anyway' button you will need to click. 
+
+These steps will allow you to continue the install process.
