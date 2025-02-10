@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dal 09-16-2024
+    hp = horsepower
+    C = chevy
+    F = ford
+-->
+<root><Title>How <brand key="C">Chevy</brand> Paved the Way with the <vehicle ref="C">El Camino</vehicle></Title>
+    <FirstSection><para>Like every other industry, the automotive industry stirs competition, and with it innovation…along with one-upmanship and taking an idea to the next level. A lot of all that led to the <brand>Chevrolet </brand><vehicle ref="C">El Camino</vehicle>, which debuted in <year>1959</year>.</para>
+        <para>But how the <vehicle ref="C">El Camino</vehicle> came about is an interesting tale, filled with some pretty exciting twists and turns. It wasn’t the first pickup-in-a-car in America—and that’s not because the <brand key="F">Ford </brand><vehicle ref="F">Ranchero</vehicle> edged it out by two years…with an idea inspired by—who else—<brand>Chevy</brand>!</para></FirstSection>
+    
+    <SubTitle><brand>Chevrolet</brand> shows “the way.” The <year>1959</year> <vehicle ref="C">El Camino</vehicle>.</SubTitle>
+    <SecondSection><para>It was <year>1959</year> when <brand>Chevrolet</brand> introduced what was called a coupé utility (a term <brand>Ford</brand> coined in <year>1957</year>) and named it the <vehicle ref="C">El Camino</vehicle>, which translated means “the way” or the road/journey.</para>
+        <para>Unlike the truck-based <vehicle ref="C">Cameo Carrier</vehicle>, the <vehicle ref="C">El Camino</vehicle> was based on the <brand>Chevy</brand> <vehicle ref="C">Brookwood station wagon</vehicle>, which had a <wheelbase>119-inch wheelbase</wheelbase>. However, the exterior trim was borrowed from the classy <vehicle ref="C">Bel Air sedan</vehicle>, and was the first to use a steel bed floor, ditching wood material and using a corrugated sheet-metal insert instead.</para>
+    <para>The standard engine was a <hp>135-hp</hp>, <cbInches>235-cu.-in</cbInches>. inline <engine>6-cylinder</engine>, with a <transmission>3-speed manual transmission</transmission>. But there were engine upgrade options, starting with <engine>two V8 engines</engine>: One offered <hp>170 horsepower</hp> (improved to 230 in <year>1960</year>), with <cbInches>283 cubic inches</cbInches> and fuel injection; the second <engine>V8</engine> option was up to <hp>355 horsepower</hp>, with <cbInches>348 cubic inches</cbInches> and <carbuerator>three carburetors</carbuerator>. <transmission>Automatic transmissions</transmission> were also available—either the <glide>Powerglide</glide> (a <transmission>2-speed automatic</transmission>) or the <glide>Turboglide</glide> (a continuously variable automatic).</para>
+        <para>It was long and low and eye-catching. No one had ever seen a pickup truck with a very non-pickup-like stylized front and rear end. The front of the <vehicle ref="C">El Camino</vehicle> featured “eyebrows” over dual headlamps. The rear had those bat-like/gull-like wings, whichever animal you prefer to use.</para></SecondSection>
+    
+    <SubTitle>The <year>1960</year> <vehicle ref="C">El Camino</vehicle></SubTitle>
+    <ThirdSection><para>The similar but less flamboyant <year>1960</year> model started at $2,366 for the <engine>6-cylinder</engine> model, plus another $107 if you wanted a <engine>V8</engine> with the <carbuerator>two-barrel 283</carbuerator>. The front and rear-end styling continued to mirror the changes of the <vehicle ref="C">Bel Air</vehicle>.</para>
+        <para>The front of the <vehicle ref="C">Bel Air</vehicle>–influenced <vehicle ref="C">El Camino</vehicle> was modified slightly for year two. There was a grille with “floating” headlamps—and the eyebrows had been “shaved off.” But looks aren’t everything, as Chevy car-buying families were proving.</para>
+        <para>Whereas the <brand>Chevy</brand> <vehicle ref="C">Bel Air</vehicle> (the car) produced <unitsSold>447,000 units</unitsSold> in <year>1959</year>, the <vehicle>Bel Air</vehicle>–looking <vehicle ref="C">El Camino</vehicle> sold <unitsSold>22,000 units</unitsSold> that same year.</para>
+        <para>In <year>1960</year>, only <unitsSold>14,163</unitsSold> <vehicle ref="C">El Caminos</vehicle> were sold, and <brand>Chevy</brand> decided to halt <vehicle ref="C">El Camino</vehicle> production. It would make a comeback in <year>1964</year>.</para>
+    <para>In a way, it suffered the same fate as its little-known relative.</para></ThirdSection>
+    
+    <SubTitle>Before the <vehicle ref="C">El Camino</vehicle>—the <vehicle ref="C">Cameo Carrier</vehicle>.</SubTitle>
+    <FourthSection><para>When <year>1955</year> came around, <brand>Chevrolet</brand> did something new and special. They rolled out a specially designed and fancied-up one of their pickup trucks to add style and comfort. It was called the <vehicle ref="C">Camino Carrier</vehicle>. It was stylish inside and out and turned heads—yet it was, in the end, a well-designed version of the <brand>Chevy</brand> Task Force generation of pickup trucks.</para>
+      <para>In the U.S., pickup trucks were, well, “trucks,” meant to be sturdy enough to handle whatever tough task there was. The <vehicle ref="C">Cameo Carrier</vehicle> sold <unitsSold>10,000 units</unitsSold> its first year. Sales slowed after that, as the competition rolled out their own pickups. In production for three years, the <vehicle ref="C">Camino Carrier</vehicle>, which never made a comeback, did inspire one vehicle maker to rethink the pickup concept…</para></FourthSection>
+    
+    <SubTitle><brand>Ford</brand> gets in the act: the <vehicle ref="F">Ranchero</vehicle>.</SubTitle>
+    <FifthSection><para>During that time, <year>1957</year> to be precise, <brand>Ford</brand> rolled out a new vehicle they called a coupé utility, named the <vehicle ref="F">Ranchero</vehicle>. Interestingly, <brand>Ford</brand> had created a utility coupe in Australia in the <year>mid-1930s</year>—a hybrid car-truck that was nice enough for driving to church but handy enough to carry farm animals and do other rural chores. The Australians called that kind of car a “ute” (yoot)—short for utility.</para>
+     <para>The ute concept hadn’t made any ripples with the big USA carmakers. But when <brand>Ford</brand> saw the <vehicle ref="C">Cameo Carrier</vehicle> and the initial buzz it caused, they saw an opportunity. So, <brand>Ford</brand> brought the ute concept to American car buyers with the <vehicle ref="F">Ranchero</vehicle>, and they put the emphasis on the car.</para>
+     <para>The <vehicle ref="F">Ranchero</vehicle> was more car than truck (the reverse of the <vehicle>Cameo Carrier</vehicle>) and gave buyers the usefulness of a light pickup truck with the comforts (and familiarity) of an everyday driving car. In the <year>1950s</year>, how many car drivers had even thought of buying a pickup before!</para>
+        <para>With the <vehicle ref="F">Ranchero</vehicle> on the loose and in driveways, not just at construction sites and farms, <brand>Chevy</brand> knew it had to respond with something dramatic of its own. So in <year>1959</year> (one year after the <vehicle ref="C">Cameo Carrier</vehicle> was discontinued), the <vehicle ref="C">El Camino</vehicle> made its debut.</para>
+    <para>But as you’ve already read, that first generation lasted only two years due to poor sales. But…<brand>Chevy</brand> wasn’t quite done with it yet.</para></FifthSection>
+    
+    <SubTitle>The <vehicle ref="C">El Camino’s</vehicle> comeback, <year>1964</year>.</SubTitle>
+    <SixthSection><para><brand>Chevrolet</brand> introduced an all-new midsize <vehicle ref="C">El Camino</vehicle> in <year>1964</year> based on the <brand>Chevrolet</brand><vehicle> Chevelle</vehicle>, which debuted that same year, and it was built on an A-body platform. The new <vehicle ref="C">El Camino</vehicle> was part of the <vehicle ref="C">Chevelle</vehicle> lineup and similar to the <vehicle ref="C">Chevelle</vehicle> two-door wagon.</para>
+        <para>The rebirthed <vehicle ref="C">El Camino</vehicle> had “<vehicle ref="C">Chevelle</vehicle>” and “<vehicle ref="C">El Camino</vehicle>” badges, and <brand>Chevrolet</brand> marketed it primarily as a utility vehicle.</para>
+        <para>The second generation lasted from <year>1964–67</year>, and there would be a total of five generations, with the last <vehicle ref="C">El Camino</vehicle> debuting and disappearing in <year>1987</year>.</para></SixthSection>
+    
+    
+    <Metadata><site>Site:
+        https://aldanamerican.com/blog/how-<brand>chevy</brand>-paved-the-way-with-the-<vehicle ref="C">el-camino</vehicle>/</site>
+    
+        <resources NumSources="3">Resources: <link>Youtube.com (<year>1959</year> <vehicle ref="C">elcamino</vehicle>); https://www.hotcars.com/<brand>chevy</brand>-<vehicle ref="C">el-camino</vehicle>-facts/</link>
+    
+    <link>“<brand>Chevrolet</brand> Trucks” 100 Years in the Building”; Larry Edsall; <year>2017</year> Quarto Publishing;</link>
+    
+            <link>https://www.hagerty.com/<brand>chevy</brand>-<vehicle ref="C">cameo-carrier</vehicle>; enwikipedia.org/<brand>chevy</brand><vehicle ref="C">elcamino</vehicle>; google SERP: brookwood station wagon</link></resources></Metadata>
+</root>
