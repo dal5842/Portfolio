@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 
+        convo = conversation on the telegraph
+        NFL = Newfoundland
+        V = Valentia
+        TimeLogInter = time log intermisson
+        SC = starting conversation
+        EC = ending conversation
+        NC = conversation from newfoundland
+        VC = conversation from valentia
+        ImportPerson = important person
+        
+    -->
+    <MetaData><source>History of the Atlantic Cable &amp; Undersea Communications
+        from the first submarine cable of <year>1850</year> to the worldwide fiber optic network</source>
+        
+        <DocTitle>Messages Carried by the <year>1858</year> Atlantic Telegraph Cable</DocTitle></MetaData>
+    
+    <entries date="1858-08-22">
+    <date>August 22</date>
+        
+    <FromPlace key="NFL">Newfoundland</FromPlace> to <ToPlace key="V">Valentia</ToPlace>.
+    <convo SC="start" NC="ConvoFromNFL">“Can you receive message?” <TimeLogInter>(After an hour’s intermission,)</TimeLogInter>
+    “How do you receive?" <TimeLogInter>(Seven hours’intermission,)</TimeLogInter>“Do you receive this?”</convo>
+    
+    <FromPlace ref="V">Valentia</FromPlace> to <ToPlace ref="NFL">Newfoundland</ToPlace>.
+    <covno VC="ConvoFromV">“Can you read this?”</covno>
+    
+    <FromPlace ref="NFL">Newfoundland</FromPlace> to <ToPlace ref="V">Valentia</ToPlace>.
+    <convo NC="ConvoFromNFL">“Yes. Can you take message now?”</convo>
+    
+    <FromPlace ref="V">Valentia</FromPlace> to <ToPlace ref="NFL">Newfoundland</ToPlace>.
+    <convo VC="ConvoFromV">“Yes.”</convo>
+    
+    <FromPlace ref="NFL">Newfoundland</FromPlace> to <ToPlace ref="V">Valentia</ToPlace>.
+    <convo NC="ConvoFromNFL">“<date>August 21</date>, <city>New York</city>. <ImportPerson>Right-Honorable Sir Walter Carden, Lord Mayor of <city>London</city></ImportPerson>:—<speech>I congratulate your Lordship upon the successful laying of the <telegraph>Atlantic Cable</telegraph>, uniting continents <contients>Europe and America</contients>, cities <city>London and New York</city>, <country>Great Britain</country> and the <country>United States</country>. It is a triumph of science and energy over time and space, uniting more closely the bonds of peace and commercial prosperity,—introducing an era in the world’s history pregnant with results beyond the conception of a finite mind.</speech>"
+    “<ImportPerson>DANIEL F. TIEMANN, Mayor</ImportPerson>”</convo>
+    
+    <FromPlace ref="V">Valentia</FromPlace> to <ToFrom ref="NFL">Newfoundland</ToFrom>.
+    <convo VC="ConvoFromV">“Mayor’s message received.”
+    “Insulate for <TimePass>two hours</TimePass>, and say when you commence. Repeat this.”</convo>
+    
+    <FromPlace ref="NFL">Newfoundland</FromPlace> to <ToPlace ref="V">Valentia</ToPlace>.
+    <convo NC="ConvoFromNFL">“Understand. Cable insulated.”
+    “Have you finished testing?”
+    “Repeat. Send much slower.”
+    “Signals are good, but your sending comes very bad. Repeat all.”
+    “Please repeat service.”
+    “Repeat service message.”
+    “Repeat service now.” The above were all the signals read after the transmission of the Mayor’s message at <time>2.15 P.M., until 10.19 P.M</time>.</convo>
+    
+    <FromPlace ref="V">Valentia</FromPlace> to <ToPlace ref="NFL">Newfoundland</ToPlace>.
+    <convo VC="ConvoFromV">“<ImportPerson>Thomson to De Sauty</ImportPerson>:—Put delicate detector in circuit, and
+    note weak currents from us, thirty minutes each way. Say if ready.”</convo>
+    
+    <FromPlace ref="NFL">Newfoundland</FromPlace> to <ToPlace ref="V">Valentia</ToPlace>.
+    <convo NC="ConvoFromNFL">“Repeat word after ‘us.’”</convo>
+    
+    <FromPlace ref="V">Valentia</FromPlace> to <ToPlace ref="NFL">Newfoundland</ToPlace>.
+    <convo VC="ConvoFromV">“Thirty.”</convo>
+    
+    <FromPlace ref="NFL">Newfoundland</FromPlace> to <ToPlace ref="V">Valentia</ToPlace>.
+    <convo EC="end" NC="ConvoFromNFL">“Understand. Ready now.”</convo>
+        
+    </entries>  
+</root>
