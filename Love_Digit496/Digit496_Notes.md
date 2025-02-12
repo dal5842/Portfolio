@@ -4,8 +4,8 @@
 ## Installing homebrew :
 
 
-1.  Installing homebrew is for downloading java on your personal computer.
-2.  When needing to get homebrew you will open a new terminal on your computer then in a web browser look up this url : `https://brew.sh`
+1. Installing homebrew is for downloading java on your personal computer.
+2. When needing to get homebrew you will open a new terminal on your computer then in a web browser look up this url : `https://brew.sh`
 3. Once you have homebrew website open you should see a big header that says install homebrew and a line of terminal code below it `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`. You will need to copy the code into your terminal and this will start your launch process.
 4. You will receive an error for sudo which represents "substitute user do" so to counter this error you will take the download code line for homebrew and add the word sudo before `sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` after running this line it will prompt you with asking for a password this is the password you use to login to you local computer.
 5. Once you enter your password the terminal will the state "Checking for sudo access (which may request your password)... Don't run this as root!" aftering receiving this error you will then repaste that orginal homebrew install code.
@@ -48,8 +48,8 @@ alias github="cd /Users/dannikalove/Documents/Github"`
 
 ## Installing coffeepot
 
-When downloading coffeepot for mac user your computer will give you a malware error that you will need to bypass to continue the install process.
-1. Go to your little apple icon
+When downloading coffeepot for mac users your computer will give you a malware error (it is not malware mac is just super careful) that you will need to bypass to continue the install process.
+1. Go to your little apple icon in top left
 1. Hit system settings
 1. Then go to your privacy and security page
 1. Once there scroll down to the bottom to the security section which will say something only the lines of "'coffeepot' was blocked to protect your mac" then have a 'allow anyway' or 'open anyway' button you will need to click. 

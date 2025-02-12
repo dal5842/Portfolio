@@ -1,4 +1,3 @@
-<movie>
 <sp>[Disney's Mulan
 Compiled by Barry Adams during theater showings in 1998
 Last updated: August 18, 1998
@@ -2940,4 +2939,3 @@ chickens follow him in]</sp>
 
 <sp>[The End]</sp>
 
-</movie>
