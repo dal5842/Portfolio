@@ -25,7 +25,7 @@
 ### Getting to zshell
 
 1. `cd` 
-1. `ls - lisa`
+1. `ls -lisa`
 1. `nano .zshrc`
 
 ### Making alias
@@ -48,10 +48,37 @@ alias github="cd /Users/dannikalove/Documents/Github"`
 
 ## Installing coffeepot
 
-When downloading coffeepot for mac users your computer will give you a malware error (it is not malware mac is just super careful) that you will need to bypass to continue the install process.
+### When downloading coffeepot for mac users your computer will give you a malware error (it is not malware mac is just super careful) that you will need to bypass to continue the install process.
 1. Go to your little apple icon in top left
 1. Hit system settings
 1. Then go to your privacy and security page
 1. Once there scroll down to the bottom to the security section which will say something only the lines of "'coffeepot' was blocked to protect your mac" then have a 'allow anyway' or 'open anyway' button you will need to click. 
 
-These steps will allow you to continue the install process.
+### These steps will allow you to continue the install process.
+1. After installing coffeepot you will now need to create an alias.
+1. First go to your home in your terminal by just typing `cd`
+1. Next type `nano .zshrc` this is get you into your zshell.
+1. Once in your shell you will make the alias here is mine note you will need to change the file paths to make sure it matches your computer and where everything is located : ` alias coffeepot='java -jar /Users/dannikalove/Documents/GitHub/coffeepot-3.2.7/coffeepot-3.2.7.jar'`
+1. To save this you will need to exit the window like my instructions above to save this alias.
+1. After getting out of the shell you will need to close the terminal to set the save for real.
+
+### Now you will need to configure coffeepot to actually get to use it
+1. First you will need to cd back to the home of your terminal.
+1. We will be creating a system dot file. So you will type ` touch .nineml.properties`
+1. Next you will need to enter into that dot file by typeing into the terminal ` nano .nineml.properties`
+1. Once in the dot file you will need to type : `graphviz=/opt/homebrew/bin/dot
+ignore-trailing-whitespace=true
+pretty-print=true
+progress-bar=tty
+assert-valid-xml-characters=true
+assert-valid-xml-names=true
+ignore-bom=true
+normalize-line-endings=true
+trailing-newline-on-output=true`
+1. When you copy that in you may need to adjust the format of it if extra spaces are added.
+1. Once you entered that code in you will need to exit the dot file to save it.
+1. After leaving the dot file you can either close the terminal
+1. You are finally able to start running coffeepot now. 
+
+## Markup Blitz
+1. 
