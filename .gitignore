@@ -19,4 +19,7 @@ etc/
 pyvenv.cfg
 share/
 .ipynb_checkpoints/
+<<<<<<< HEAD
 .DS_Store
+=======
+>>>>>>> 4cf99312c884a9cee30e91bedab6cc102ae9f6a3
