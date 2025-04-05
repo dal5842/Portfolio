@@ -1,20 +1,15 @@
 /* General Styling */
 body {
-    font-family: 'Comic Sans MS', 'Trebuchet MS', sans-serif; 
+    font-family: 'Poppins', 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: MediumSlateBlue; 
-    color: #333;
+    background: linear-gradient(to right, #4b0082, #228b22, #4682b4); 
+    color: #f5f5f5;
     line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Fredoka One', 'Comic Sans MS', cursive;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; 
     color: #fff;
 }
 
@@ -23,29 +18,25 @@ h1 {
     font-size: 3em;
 }
 
-h2,
-h3 {
+h2, h3 {
     margin-top: 1.5em;
     font-size: 2.5em;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
     margin-bottom: 1em;
     font-size: 1.5em;
-    color: Black;
+    color: #e0e0e0;
 }
-
-/* Styling paragraphs with borders and fun effects */
+/* Paragraph Styling */
 p {
     font-family: 'Trebuchet MS', sans-serif;
-    padding: 2em;
+    padding: 1.5em;
     line-height: 1.8;
     font-size: 1.1em;
-    color: #f5f5f5;
-    border: 5px dashed LightCoral;
-    border-radius: 15px;
+    color: #fff;
+    border: 2px solid #228b22;
+    border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 2em auto;
@@ -54,10 +45,11 @@ p {
 
 /* Navigation Bar Styling */
 nav {
-    background-color: Silver;
+    background-color: #2e3b4e;
     display: flex;
     justify-content: center;
     padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -68,23 +60,20 @@ nav ul {
     gap: 2vw;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
-    font-family: 'Pacifico', 'Comic Sans MS', cursive; 
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: white;
-    background-color: DarkSlateGray;
+    color: #fff;
+    background-color: #4682b4;
     padding: 0.7em 1.5em;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
     font-size: 1.2em;
 }
 
 nav ul li a:hover {
-    background-color: SkyBlue;
+    background-color: #4b0082;
+    transform: scale(1.1);
 }
 
 hr {
@@ -96,22 +85,21 @@ hr {
 
 /* Button Styling */
 .button {
-    font-family: 'Fredoka One', 'Comic Sans MS', cursive;
-    border: 2px solid DarkSlateBlue;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #4b0082;
     padding: 1em 2em;
-    background-color: DarkSlateGray;
-    color: CadetBlue;
-    width: auto;
-    display: inline-block;
+    background-color: #228b22;
+    color: #fff;
     border-radius: 20px;
     cursor: pointer;
     font-size: 1.1em;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.button:hover {
-    background-color: CadetBlue;
-    color: DarkSlateGray;
+/* Added hover effect for interactive elements */
+.button:active, nav ul li a:active {
+    transform: scale(0.95);
+    opacity: 0.8;
 }
 
 /* List Styling */
@@ -163,17 +151,6 @@ figure.dearData {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 5px;
-}
-
-/* Styling for iframe.thingLink */
-iframe.thingLink {
-    width: 80vw;
-    height: 70vh;
-    border: 5px solid LightSeaGreen;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 2em auto;
-    display: block;
 }
 
 /* Resume Styling */
@@ -249,32 +226,24 @@ img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Copyright Footer Styling */
+/* Footer Styling */
 footer.copyright {
-    color: White;
+    background-color: #2e3b4e;
+    color: #f5f5f5;
     padding: 1em;
+    text-align: center;
     font-size: 0.9em;
 }
 
 footer.copyright a {
     text-decoration: none;
     font-weight: bold;
+    color: #4682b4;
 }
 
 footer.copyright a:hover {
-    color: White;
+    color: #4b0082;
     text-decoration: underline;
-}
-
-footer.copyright p {
-    margin: 0.5em 0;
-    line-height: 1.5;
-}
-
-footer.copyright img {
-    height: 22px;
-    margin-left: 3px;
-    vertical-align: text-bottom;
 }
 
 /* Section Styling */
@@ -322,12 +291,12 @@ h6 {
 /* Style for larger images on the Game Analysis page */
 .game-analysis-img {
     width: 1000px;
-    height: 300px; 
-    margin: 20px auto; 
-    display: block; 
-    border: 2px solid white; 
-    border-radius: 5px; 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); 
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Container for the images */
@@ -336,13 +305,13 @@ h6 {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
 /* Style for centered h2 on the Game Analysis page */
 .game-analysis-title {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px; 
-    color: white; 
+    margin-bottom: 20px;
+    color: white;
 }
