@@ -52,8 +52,12 @@ for file in os.listdir(collPath):
 # Combine all DataFrames into one
 fullDataFrame = pd.concat(allDataFrames, ignore_index=True)
 
+# Create the output folder if it doesn't exist
+outputDir = os.path.join(collPath, "output")
+os.makedirs(outputDir, exist_ok=True)
+
 # Save as TSV for Cytoscape
-outputPath = "networkData.tsv"
+outputPath = os.path.join(outputDir, "PandaNetworkData.tsv")
 fullDataFrame.to_csv(outputPath, sep='\t', index=False)
 
 print(f"✅ TSV saved to: {outputPath}")
