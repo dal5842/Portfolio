@@ -3,31 +3,33 @@ body {
     font-family: 'Poppins', 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #4b0082, #228b22, #4682b4); 
+    /* Updated gradient with new palette */
+    background: linear-gradient(to right, #1F449C, #3D65A5, #7CA1CC); 
     color: #f5f5f5;
     line-height: 1.6;
 }
 
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    border-radius: 4px;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif; 
     color: #fff;
 }
 
-h1 {
-    margin-top: 1em;
-    font-size: 3em;
-}
-
-h2, h3 {
-    margin-top: 1.5em;
-    font-size: 2.5em;
-}
-
-h4, h5, h6 {
-    margin-bottom: 1em;
-    font-size: 1.5em;
-    color: #e0e0e0;
-}
 /* Paragraph Styling */
 p {
     font-family: 'Trebuchet MS', sans-serif;
@@ -35,7 +37,7 @@ p {
     line-height: 1.8;
     font-size: 1.1em;
     color: #fff;
-    border: 2px solid #228b22;
+    border: 2px solid #3D65A5;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -45,7 +47,7 @@ p {
 
 /* Navigation Bar Styling */
 nav {
-    background-color: #2e3b4e;
+    background-color: #1F449C; /* darkest blue for strong base */
     display: flex;
     justify-content: center;
     padding: 1em 0;
@@ -64,42 +66,45 @@ nav ul li {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: #fff;
-    background-color: #4682b4;
+    background-color: #1F449C; /* changed: now darkest shade */
     padding: 0.7em 1.5em;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s;
     font-size: 1.2em;
 }
 
-nav ul li {
-    background-color: #4b0082;
+/* Hover and focus accessibility */
+nav ul li:hover,
+nav ul li:focus-within {
+    background-color: #7CA1CC; /* lighter blue to contrast with dark */
+    color: #000;
     transform: scale(1.1);
 }
 
+/* Ensure links inherit colors */
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Link Styling */
 a {
-    color: #00ffff;
+    color: #7CA1CC;
     text-decoration: underline;
     font-weight: bold;
 }
 
-a:hover {
-    color: #ff69b4;
+a:hover, a:focus {
+    color: #A8B6CC;
     text-decoration: none;
 }
 
-hr {
-    border: 0;
-    height: 4px;
-    background: linear-gradient(to right, DimGrey, Black);
-    margin: 2em 0;
-}
-
-/* Button Styling */
+/* Buttons */
 .button {
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid #4b0082;
+    border: 2px solid #1F449C;
     padding: 1em 2em;
-    background-color: #228b22;
+    background-color: #3D65A5;
     color: #fff;
     border-radius: 20px;
     cursor: pointer;
@@ -107,148 +112,31 @@ hr {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Added hover effect for interactive elements */
+.button:hover, .button:focus {
+    background-color: #7CA1CC;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Active states */
 .button:active, nav ul li a:active {
     transform: scale(0.95);
     opacity: 0.8;
 }
 
-/* List Styling */
-ul,
-ol {
-    padding: 2em;
-    color: #fff;
-}
-
-ul {
-    list-style-type: lower-alpha;
-}
-
-ol {
-    list-style-type: decimal;
-}
-
-ul li,
-ol li {
-    margin-bottom: 1em;
-}
-
-/* Dear Data Styling */
-figure.dearData {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2em;
-    margin: 2em 0;
-}
-.dearData-section {
-    border: 6px solid LightSeaGreen;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    max-width: 80%;
+/* Figure and Caption Styling */
+figure {
     margin: 2em auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.dearData-section figure.dearData img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 5px;
-}
-/* Video Styling for Art 168 Projects */
-.video-gallery {
-    background-color: #f8f9ff;
-    padding: 2em;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    margin: 2em auto;
-    max-width: 900px;
-}
-
-.video-gallery h4 {
-    color: #3d2c8d;
-    font-size: 1.3em;
-    margin-top: 1.5em;
+    display: inline-block;
     text-align: center;
 }
 
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 12px;
-    margin-bottom: 2em;
-}
-
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* Resume Styling */
-.resume-header {
-    color: MediumSlateBlue;
-}
-
-h1,
-h3,
-h4,
-h5 {
-    margin: 10px 0;
-}
-
-.resume ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.resume li {
-    margin: 5px 0;
-}
-
-/* Text Pattern Page */
-.text-patterns figure img {
-    max-width: 350px;
-    border-color: Plum;
-}
-
-.text-pattern-img img {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    border: 5px solid #ff6347;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(255, 99, 71, 0.7);
-}
-
-.text-pattern-img img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px rgba(255, 99, 71, 0.7);
-}
-
-/* Figure and Image Styling */
-figure {
-    margin: 2em auto;
-    max-width: 95%;
-    color: White;
-}
-
-img {
+figure img {
+    display: block;
+    margin: 0 auto;
     max-width: 300px;
     width: 100%;
     height: auto;
-    border-color: Plum;
     border-radius: 10px;
     border: 5px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -258,18 +146,36 @@ img {
 figcaption {
     font-style: italic;
     font-size: medium;
-    color: Plum;
+    color: #A8B6CC;
     margin-top: 0.5em;
+    text-align: center;
 }
 
-img:hover {
+/* Images */
+img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover, img:focus {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Focus outline */
+:focus {
+    outline: 3px solid #A8B6CC;
+    outline-offset: 3px;
+}
+
 /* Footer Styling */
 footer.copyright {
-    background-color: #2e3b4e;
+    background-color: #1F449C;
     color: #f5f5f5;
     padding: 1em;
     text-align: center;
@@ -279,80 +185,11 @@ footer.copyright {
 footer.copyright a {
     text-decoration: none;
     font-weight: bold;
-    color: #4682b4;
+    color: #7CA1CC;
 }
 
-footer.copyright a:hover {
-    color: #4b0082;
+footer.copyright a:hover,
+footer.copyright a:focus {
+    color: #A8B6CC;
     text-decoration: underline;
-}
-
-/* Section Styling */
-body section {
-    margin: auto;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Footer or minor headings */
-h6 {
-    font-size: 0.9em;
-    color: #f5f5f5;
-    margin-bottom: 2em;
-}
-
-/* Responsive Design */
-@media (max-width : 768px) {
-    nav ul li a {
-        padding: 0.5em 1em;
-        font-size: 1em;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    p {
-        padding: 1em;
-        font-size: 1em;
-    }
-
-    iframe.thingLink {
-        width: 100vw;
-        height: 50vh;
-    }
-
-    img {
-        max-width: 200px;
-    }
-}
-
-/* Style for larger images on the Game Analysis page */
-.game-analysis-img {
-    width: 1000px;
-    height: 300px;
-    margin: 20px auto;
-    display: block;
-    border: 2px solid white;
-    border-radius: 5px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-}
-
-/* Container for the images */
-.image-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-/* Style for centered h2 on the Game Analysis page */
-.game-analysis-title {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
 }
