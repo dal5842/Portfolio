@@ -1,12 +1,26 @@
 /* General Styling */
 body {
     font-family: 'Poppins', 'Trebuchet MS', sans-serif;
-    margin: 0;
+    margin: 20px;
     padding: 0;
-    /* Updated gradient with new palette */
-    background: linear-gradient(to right, #1F449C, #3D65A5, #7CA1CC); 
-    color: #f5f5f5;
+    background: linear-gradient(to right, #1F449C, #3D65A5, #7CA1CC);
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
     line-height: 1.6;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Box that changes color */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 /* Skip link */
@@ -25,8 +39,13 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
 
@@ -47,7 +66,7 @@ p {
 
 /* Navigation Bar Styling */
 nav {
-    background-color: #1F449C; /* darkest blue for strong base */
+    background-color: #1F449C;
     display: flex;
     justify-content: center;
     padding: 1em 0;
@@ -66,7 +85,7 @@ nav ul li {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: #fff;
-    background-color: #1F449C; /* changed: now darkest shade */
+    background-color: #1F449C;
     padding: 0.7em 1.5em;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s;
@@ -76,7 +95,7 @@ nav ul li {
 /* Hover and focus accessibility */
 nav ul li:hover,
 nav ul li:focus-within {
-    background-color: #7CA1CC; /* lighter blue to contrast with dark */
+    background-color: #7CA1CC;
     color: #000;
     transform: scale(1.1);
 }
@@ -94,7 +113,8 @@ a {
     font-weight: bold;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #A8B6CC;
     text-decoration: none;
 }
@@ -104,6 +124,7 @@ a:hover, a:focus {
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #1F449C;
     padding: 1em 2em;
+    margin: 20px;
     background-color: #3D65A5;
     color: #fff;
     border-radius: 20px;
@@ -112,14 +133,16 @@ a:hover, a:focus {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.button:hover, .button:focus {
-    background-color: #7CA1CC;
+.button:hover,
+.button:focus {
+    background-color: #3D65A5;
     color: #000;
     transform: scale(1.05);
 }
 
 /* Active states */
-.button:active, nav ul li a:active {
+.button:active,
+nav ul li a:active {
     transform: scale(0.95);
     opacity: 0.8;
 }
@@ -162,7 +185,8 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img:hover, img:focus {
+img:hover,
+img:focus {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -192,4 +216,7 @@ footer.copyright a:hover,
 footer.copyright a:focus {
     color: #A8B6CC;
     text-decoration: underline;
+}
+.hidden {
+  display: none;
 }

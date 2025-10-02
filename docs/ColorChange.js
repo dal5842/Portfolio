@@ -1,24 +1,61 @@
-<script type="text/javascript" src="colorChange.js"></script>
+// Run init after page loads
 window.addEventListener('DOMContentLoaded', init, false);
 
 function init() {
-    alert("The page loaded!");
-}
-<button>Change Color</button>
-<button>Do Something Else</button>
-function init() {
-    var buttons = document.getElementsByTagName("button");
-    buttons[0].addEventListener("click", changeColor, false);
-    buttons[1].addEventListener("click", newFunction, false);
+    console.log("The page loaded!");
+    
+    // Attach events to buttons
+    document.getElementById("colorBtn").addEventListener("click", changeColor, false);
+    document.getElementById("darkModeBtn").addEventListener("click", toggleDarkMode, false);
+    document.getElementById("alertBtn").addEventListener("click", newFunction, false);
+    
+    // Check saved dark mode preference
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
 }
 
+// Change box color
 function changeColor() {
-    var box = document.getElementById("colorToggle");
-    box.style.backgroundColor = "skyblue";
+    let box = document.getElementById("colorToggle");
+    box.style.backgroundColor = (box.style.backgroundColor === "skyblue") ? "lightgray": "skyblue";
 }
 
+// Toggle dark mode
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    
+    // Save preference
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+// Example of a second button action
 function newFunction() {
     alert("Second button clicked!");
 }
-<div id="colorToggle" style="width:200px; height:200px; background-color:lightgray;"></div>
-console.log("Testing…");
+let hoverBox = document.getElementById("hoverBox");
+hoverBox.addEventListener("mouseover", () => {
+    hoverBox.style.backgroundColor = "lightgreen";
+    hoverBox.textContent = "Nice! You hovered!";
+});
+hoverBox.addEventListener("mouseout", () => {
+    hoverBox.style.backgroundColor = "lightgray";
+    hoverBox.textContent = "Hover over me!";
+});
+let count = 0;
+document.getElementById("increaseBtn").addEventListener("click", () => {
+    count++;
+    document.getElementById("counterValue").textContent = count;
+});
+document.getElementById("decreaseBtn").addEventListener("click", () => {
+    count--;
+    document.getElementById("counterValue").textContent = count;
+});
+document.getElementById("secretCheck").addEventListener("change", function() {
+    let message = document.getElementById("secretMessage");
+    message.classList.toggle("hidden");
+});
