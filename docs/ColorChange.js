@@ -55,7 +55,24 @@ document.getElementById("decreaseBtn").addEventListener("click", () => {
     count--;
     document.getElementById("counterValue").textContent = count;
 });
-document.getElementById("secretCheck").addEventListener("change", function() {
+document.getElementById("secretCheck").addEventListener("change", function () {
     let message = document.getElementById("secretMessage");
     message.classList.toggle("hidden");
+});
+
+// --- Rocket Launch Animation ---
+const rocket = document.getElementById("rocketSVG");
+rocket.addEventListener("click", () => {
+    rocket.classList.toggle("launch");
+    
+    const flame = document.getElementById("flame");
+    flame.setAttribute("fill", flame.getAttribute("fill") === "orange" ? "red": "orange");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const circle = document.querySelector("#colorCircle circle");
+    circle.addEventListener("click", () => {
+        const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        circle.setAttribute("fill", randomColor);
+    });
 });

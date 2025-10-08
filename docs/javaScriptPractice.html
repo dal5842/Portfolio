@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
-    
+
     <body>
         <h1> Dannika Love's Website (Portfolio) </h1>
         <nav class="list">
@@ -22,6 +22,15 @@
                 <li><a href="javaScriptPractice.html">Java Script Practice</a></li>
             </ul>
         </nav>
+        <svg id="background-waves" preserveAspectRatio="none" viewBox="0 0 1440 320">
+            <path fill="#7CA1CC" fill-opacity="0.5">
+                <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+                    M0,160L80,165C160,170,320,180,480,200C640,220,800,250,960,240C1120,230,1280,190,1360,160L1440,130L1440,320L0,320Z;
+                    M0,140L80,150C160,160,320,180,480,200C640,220,800,240,960,220C1120,200,1280,140,1360,110L1440,80L1440,320L0,320Z;
+                    M0,160L80,165C160,170,320,180,480,200C640,220,800,250,960,240C1120,230,1280,190,1360,160L1440,130L1440,320L0,320Z"
+                ></animate>
+            </path>
+        </svg>
         <h1>Interactive JavaScript Demo</h1>
         <fieldset>
             <legend>Interactive Controls</legend>
@@ -30,7 +39,7 @@
             <button id="darkModeBtn">Toggle Dark Mode</button>
             <button id="alertBtn">Show Alert</button>
             <label>
-                <input type="checkbox" id="secretCheck"/>
+                <input type="checkbox" id="secretCheck" />
             </label>
             <p id="secretMessage" class="hidden">Surprise! This is your hidden message.</p>
             <div id="hoverBox" class="box">Hover over me!</div>
@@ -38,6 +47,34 @@
             <button id="increaseBtn">Increase</button>
             <button id="decreaseBtn">Decrease</button>
         </fieldset>
-        <!-- Link your JS file -->
+        <section id="svg-playground">
+            <h2>SVG Animation Playground</h2>
+
+            <svg width="200" height="200" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="40" fill="mediumslateblue">
+                    <animate attributeName="r" from="30" to="70" dur="2s" repeatCount="indefinite"
+                    ></animate>
+                </circle>
+            </svg>
+
+            <svg width="200" height="200" class="hoverStar">
+                <polygon
+                    points="100,10 120,80 190,80 130,120 150,190 100,150 50,190 70,120 10,80 80,80"
+                    fill="gold"></polygon>
+            </svg>
+
+            <svg id="rocketSVG" width="200" height="200" viewBox="0 0 200 200">
+                <rect x="95" y="50" width="10" height="50" fill="gray"></rect>
+                <polygon points="100,10 120,50 80,50" fill="crimson"></polygon>
+                <polygon id="flame" points="100,100 90,130 110,130" fill="orange" opacity="0.8"
+                ></polygon>
+            </svg>
+            <p>Click the rocket to launch! Click rocket to reset.</p>
+
+            <svg id="colorCircle" width="200" height="200">
+                <circle cx="100" cy="100" r="50" fill="crimson"></circle>
+            </svg>
+            <p>Click the circle to change its color</p>
+        </section>
         <script type="text/javascript" src="ColorChange.js"></script></body>
 </html>
