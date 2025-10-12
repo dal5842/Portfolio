@@ -271,3 +271,8 @@ footer.copyright a:focus {
 #colorCircle circle:hover {
     transform: scale(1.2);
 }
+@media (max-width : 600px) {
+    main {
+        padding: 1em;
+    }
+}
