@@ -1,6 +1,6 @@
 # Erie Art Museum Fall 2025 Semester Internship 
 
-### Day Three (10/01/2025):
+### Day Four (10/01/2025):
 
 Arrived at 11 AM
 
