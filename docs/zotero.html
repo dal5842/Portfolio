@@ -10,130 +10,348 @@
         <h1> Dannika Love's Website (Portfolio) </h1>
         <nav class="list">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="textPatterns.html">Text Patterns</a></li>
-                <li><a href="gameAnalysis.html">Game Analysis</a></li>
-                <li><a href="javaScriptPractice.html">Java Script Practice</a></li>
-                <li><a href="zotero.html">Zotero Analysis of AI</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="reflection.html">Reflection</a>
+                </li>
+                <li>
+                    <a href="textPatterns.html">Text Patterns</a>
+                </li>
+                <li>
+                    <a href="gameAnalysis.html">Game Analysis</a>
+                </li>
+                <li>
+                    <a href="javaScriptPractice.html">Java Script Practice</a>
+                </li>
+                <li>
+                    <a href="zotero.html">Zotero Analysis of AI</a>
+                </li>
             </ul>
         </nav>
-        <header>
-            <h1>AI and Misinformation</h1>
-            <p>Exploring how artificial intelligence shapes, spreads, and combats misinformation
-                online</p>
-        </header>
-            <section>
-                <h2>Introduction</h2>
-                <p> Artificial intelligence is transforming communication and media, but it also
-                    plays a major role in spreading misinformation. From deepfakes and algorithmic
-                    amplification to biased content moderation, AI technologies affect how people
-                    understand truth online. This guide introduces the issue, highlights current
-                    research, and points to resources that explain different perspectives. </p>
-            </section>
-            <section>
-                <h2>Why This Issue Matters</h2>
-                <p> AI-driven misinformation influences public opinion, political trust, and even
-                    democratic stability. As a student in <strong>Digital Media, Arts, and
-                        Technology</strong>, understanding these tools is crucial— not just for
-                    building ethical technology, but for helping others navigate online information
-                    responsibly. </p>
-            </section>
-            <section>
-                <h2>Different Perspectives on the Issue</h2>
-                <h3>1. Deepfakes and Media Manipulation</h3>
-                <p> AI-generated deepfakes are becoming increasingly realistic, challenging our
-                    ability to trust visual media. These manipulated videos can be used to spread
-                    false information, impersonate individuals, or distort political messages. </p>
-                <h3>2. Algorithmic Amplification</h3>
-                <p> Algorithms decide what content we see—and often boost content that is emotional,
-                    moral, or divisive. This can unintentionally promote misleading or extremist
-                    material while shaping our perception of public opinion. </p>
-                <h3>3. Government and Platform Regulation</h3>
-                <p> Countries around the world are beginning to address AI and misinformation
-                    through legislation. New bills aim to regulate transparency, content labeling,
-                    and accountability in AI systems used for social media or political influence. </p>
-                <h3>4. Psychological and Social Factors</h3>
-                <p> Human biases—such as copying prestigious or emotionally charged information—make
-                    us especially vulnerable to misinformation. AI platforms can exploit these
-                    tendencies, accelerating polarization and distrust. </p>
-            </section>
-            <section>
-                <h2>Curated Resources and Annotations</h2>
-                <div class="source">
-                    <h3>1. “How Deepfakes Are Changing Truth and Media” — <em>National
-                            Geographic</em></h3>
-                    <p> This article explores how deepfake technology blurs the line between truth
-                        and fabrication in visual media. It’s useful because it connects technical
-                        details (like GANs) with ethical and journalistic concerns. The examples
-                        show how misinformation spreads faster when people can no longer trust what
-                        they see. </p>
-                    <a href="https://www.nationalgeographic.com/science/article/deepfakes"
-                        target="_blank">Read more →</a>
+        <section class="guide-hero" id="top">
+            <h1>AI, Misinformation & Deepfakes: A Professional Career Survival Guide</h1>
+            <p>Practical context, curated readings, and interactive ideas to help professionals
+                navigate the modern misinformation landscape.</p>
+            <div style="margin-top:0.9rem;">
+                <button id="darkToggle" class="button" aria-pressed="false" title="Toggle dark mode"
+                    >Toggle Dark Mode</button>
+                <span class="badge-ai" title="AI honesty disclosure">AI Honesty</span>
+            </div>
+        </section>
+        <nav class="toc" aria-label="Guide navigation">
+            <a href="#why">Why this matters</a>
+            <a href="#zotero">Zotero library</a>
+            <a href="#resources">Annotated resources</a>
+            <a href="#svg">Visualization</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#ai-honesty">AI usage</a>
+        </nav>
+        <section id="zotero" class="section-block" aria-labelledby="zotero-heading">
+            <h2 id="zotero-heading" style="color:#fff">My Zotero Library (curated)</h2>
+            <p> I maintain a public Zotero group with curated readings on deepfakes, AI
+                misinformation, policy, and detection strategies. This is where I collect academic
+                papers, industry notes, tool tests, and regulation trackers—useful for researchers,
+                managers, and creators. </p>
+            <div class="zotero-button-row">
+                <a
+                    href="https://www.zotero.org/groups/6200705/d4_dl_deepfakesmisinformationwsocialmedia/library"
+                    target="_blank" rel="noopener noreferrer" class="button"
+                    style="text-decoration:none;"> View full Zotero library </a>
+            </div>
+        </section>
+        <section id="resources" class="section-block" aria-labelledby="resources-heading">
+            <h2 id="resources-heading" style="color:#fff">Annotated Resources — Five key reads</h2>
+            <article class="resource-item" aria-labelledby="r1">
+                <h3 id="r1" style="margin:0 0 0.4rem 0; color:#fff;">AI Misinformation and the Value
+                    of Trusted News — CEPR / VoxEU</h3>
+                <p style="margin:0.2rem 0; color:#E8F0FF;">
+                    <a
+                        href="https://cepr.org/voxeu/columns/ai-misinformation-and-value-trusted-news"
+                        target="_blank" rel="noopener noreferrer">Read the column</a>
+                </p>
+                <p style="margin-top:0.6rem;">
+                    <strong>Summary:</strong> Field-experiment evidence showing how AI-generated
+                    misinformation affects readers’ trust and their relative demand for trustworthy
+                    news outlets. </p>
+                <p>
+                    <strong>Why it matters:</strong> Offers empirical support that misinformation
+                    changes market behavior for news—helpful when making an argument to managers or
+                    funders about investing in trustworthy channels and verification. </p>
+                <p><strong>How I'll use it:</strong> In the guide's "Trust & Institutional Response"
+                    section to motivate why verification is also an economic opportunity for
+                    credible media.</p>
+            </article>
+            <article class="resource-item" aria-labelledby="r2">
+                <h3 id="r2" style="margin:0 0 0.4rem 0; color:#fff;">What Are AI Hallucinations? —
+                    IBM</h3>
+                <p style="margin:0.2rem 0;">
+                    <a href="https://www.ibm.com/think/insights/ai-misinformation" target="_blank"
+                        rel="noopener noreferrer">IBM: Explainers on model hallucination</a>
+                </p>
+                <p style="margin-top:0.6rem;">
+                    <strong>Summary:</strong> A clear technical explainer describing why large
+                    language models sometimes "make things up," including causes and mitigation
+                    approaches. </p>
+                <p><strong>Why it matters:</strong> Understanding hallucinations helps teams set
+                    realistic expectations for AI outputs and design verification layers into
+                    workflows.</p>
+                <p><strong>How I'll use it:</strong> As the foundational technical primer in the
+                    "How it works" subsection of the guide.</p>
+            </article>
+            <article class="resource-item" aria-labelledby="r3">
+                <h3 id="r3" style="margin:0 0 0.4rem 0; color:#fff;">Milton Wolf Seminar — Media &
+                    Diplomacy (UPenn)</h3>
+                <p style="margin:0.2rem 0;">
+                    <a
+                        href="https://www.asc.upenn.edu/research/centers/milton-wolf-seminar-media-and-diplomacy-0"
+                        target="_blank" rel="noopener noreferrer">Explore the seminar</a>
+                </p>
+                <p style="margin-top:0.6rem;">
+                    <strong>Summary:</strong> Academic seminars connecting media manipulation,
+                    diplomacy, and international communications; useful for policy and global
+                    context. </p>
+                <p><strong>Why it matters:</strong> Places the technical issue within geopolitics
+                    and public diplomacy—helpful for policy-focused career paths.</p>
+                <p><strong>How I'll use it:</strong> In the "Policy & Global Impacts" section and
+                    for recommending academic events to follow.</p>
+            </article>
+            <article class="resource-item" aria-labelledby="r4">
+                <h3 id="r4" style="margin:0 0 0.4rem 0; color:#fff;">AI Model Hallucinations: Risks
+                    — SeniorExecutive</h3>
+                <p style="margin:0.2rem 0;">
+                    <a href="https://seniorexecutive.com/ai-model-hallucinations-risks/"
+                        target="_blank" rel="noopener noreferrer">Read the article</a>
+                </p>
+                <p style="margin-top:0.6rem;">
+                    <strong>Summary:</strong> Business-oriented discussion of hallucinations'
+                    operational, reputational, and legal risks, plus governance suggestions for
+                    executives. </p>
+                <p><strong>Why it matters:</strong> Bridges the gap between technical failure modes
+                    and board-level concerns—useful when advocating for investment in verification
+                    and vendor controls.</p>
+                <p><strong>How I'll use it:</strong> For the "Business & Governance" checklist and
+                    vendor due-diligence recommendations.</p>
+            </article>
+            <article class="resource-item" aria-labelledby="r5">
+                <h3 id="r5" style="margin:0 0 0.4rem 0; color:#fff;">I Tested 12 AI
+                    Humanizers—Bypassing Detection (Skywork)</h3>
+                <p style="margin:0.2rem 0;">
+                    <a
+                        href="https://skywork.ai/skypage/en/I%20Tested%2012%20AI%20Humanizers%3A%20Here%E2%80%99s%20the%20Truth%20About%20Bypassing%20AI%20Detection%20in%202025/1974506008670695424"
+                        target="_blank" rel="noopener noreferrer">Read the report</a>
+                </p>
+                <p style="margin-top:0.6rem;">
+                    <strong>Summary:</strong> Hands-on evaluations of “humanizer” tools that rework
+                    AI-generated text to evade detection, documenting methods and ethical concerns. </p>
+                <p><strong>Why it matters:</strong> Demonstrates the detection-evasion arms race and
+                    shows why multilayered defenses (education + technical + policy) are needed.</p>
+                <p><strong>How I'll use it:</strong> In the "Tools & Detection" section to motivate
+                    a combined approach beyond labeling alone.</p>
+            </article>
+        </section>
+        <section id="svg" class="section-block" aria-labelledby="svg-heading">
+            <h2 id="svg-heading" style="color:#fff">Interactive Visualization — How Misinformation
+                Spreads</h2>
+            <p> This simple SVG prototype visualizes how one manipulated post can ripple through a
+                network and reach many users quickly. (This is a lightweight prototype — if you want
+                it converted to a full interactive D3 or canvas version, we can expand it.) </p>
+            <div class="svg-wrap" aria-hidden="false">
+                <svg id="misinfoSVG" width="600" height="280" viewBox="0 0 600 280" role="img"
+                    aria-label="Animated network showing spread of misinformation">
+                    <defs>
+                        <radialgradient id="g1" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#FFD166"></stop>
+                            <stop offset="100%" stop-color="#F95738"></stop>
+                        </radialgradient>
+                    </defs>
+                    <circle id="node0" cx="300" cy="140" r="22" fill="url(#g1)" stroke="#fff"
+                        stroke-width="2"></circle>
+                    <text x="300" y="145" text-anchor="middle" font-size="12" fill="#000"
+                        font-weight="700">Origin</text>
+                    <g class="cluster">
+                        <circle cx="160" cy="70" r="12" fill="#7CA1CC"></circle>
+                        <circle cx="200" cy="110" r="12" fill="#7CA1CC"></circle>
+                        <circle cx="120" cy="120" r="12" fill="#7CA1CC"></circle>
+                        <circle cx="180" cy="170" r="12" fill="#7CA1CC"></circle>
+                    </g>
+                    <g class="cluster">
+                        <circle cx="440" cy="70" r="12" fill="#7CA1CC"></circle>
+                        <circle cx="480" cy="110" r="12" fill="#7CA1CC"></circle>
+                        <circle cx="520" cy="160" r="12" fill="#7CA1CC"></circle>
+                        <circle cx="400" cy="180" r="12" fill="#7CA1CC"></circle>
+                    </g>
+                    <line x1="300" y1="140" x2="160" y2="70" stroke="#A8B6CC" stroke-width="2"
+                        class="link"></line>
+                    <line x1="300" y1="140" x2="200" y2="110" stroke="#A8B6CC" stroke-width="2"
+                        class="link"></line>
+                    <line x1="300" y1="140" x2="120" y2="120" stroke="#A8B6CC" stroke-width="2"
+                        class="link"></line>
+                    <line x1="300" y1="140" x2="180" y2="170" stroke="#A8B6CC" stroke-width="2"
+                        class="link"></line>
+                    <line x1="300" y1="140" x2="440" y2="70" stroke="#A8B6CC" stroke-width="2"
+                        class="link"></line>
+                    <line x1="300" y1="140" x2="480" y2="110" stroke="#A8B6CC" stroke-width="2"
+                        class="link"></line>
+                    <line x1="300" y1="140" x2="520" y2="160" stroke="#A8B6CC" stroke-width="2"
+                        class="link"></line>
+                    <line x1="300" y1="140" x2="400" y2="180" stroke="#A8B6CC" stroke-width="2"
+                        class="link"></line>
+                    <circle id="pulse" cx="300" cy="140" r="24" fill="none" stroke="#FFD166"
+                        stroke-width="2" opacity="0.8"></circle>
+                </svg>
+            </div>
+            <p style="margin-top:0.6rem;"> Hover the visualization or click the <em>Simulate
+                    Spread</em> button below to see a pulse animate outward — this models how
+                quickly a single manipulated post can connect to different clusters on a network. </p>
+            <div style="text-align:center; margin-top:0.6rem;">
+                <button id="simulateBtn" class="button">Simulate Spread</button>
+            </div>
+        </section>
+        <section id="quiz" class="section-block" aria-labelledby="quiz-heading">
+            <h2 id="quiz-heading" style="color:#fff">Mini Quiz — Can you spot the red flags?</h2>
+            <p> A quick interactive exercise to practice spotting risky signals associated with
+                AI-generated content. This is intentionally lightweight: designed for engagement and
+                reflection. </p>
+            <div class="quiz-card" role="region" aria-live="polite" aria-label="Quiz question 1">
+                <strong>Q1.</strong> You receive a short video of a public figure making a
+                controversial statement. The clip has slightly odd lip movements and very smooth
+                background audio. What should you do first? <div style="margin-top:.6rem;">
+                    <button class="quiz-btn" data-correct="false">Share immediately — breaking
+                        news</button>
+                    <button class="quiz-btn" data-correct="true">Check the source and search for
+                        other outlets confirming it</button>
+                    <button class="quiz-btn" data-correct="false">Post a reaction calling it
+                        fake</button>
                 </div>
-                <div class="source">
-                    <h3>2. “AI Legislation Tracker” — <em>Brookings Institution</em></h3>
-                    <p> This policy tracker summarizes how governments worldwide are drafting laws
-                        about AI transparency and misinformation. It provides a clear overview of
-                        national strategies and ongoing debates about regulating algorithms. It’s
-                        especially useful for understanding how ethical design and law intersect. </p>
-                    <a href="https://www.brookings.edu/research/ai-legislation-tracker/"
-                        target="_blank">Read more →</a>
+                <div class="quiz-feedback" style="margin-top:.5rem;"></div>
+            </div>
+            <div class="quiz-card" role="region" aria-live="polite" aria-label="Quiz question 2">
+                <strong>Q2.</strong> An email asks you to approve a wire transfer with an audio clip
+                of your CFO saying to do it. The voice matches closely. What is the safest action?
+                    <div style="margin-top:.6rem;">
+                    <button class="quiz-btn" data-correct="true">Call the CFO via known number to
+                        confirm</button>
+                    <button class="quiz-btn" data-correct="false">Approve immediately to avoid
+                        delay</button>
+                    <button class="quiz-btn" data-correct="false">Reply asking for the file to be
+                        resent</button>
                 </div>
-                <div class="source">
-                    <h3>3. “YouTube’s AI-Generated Content Disclosure Rules” — <em>The
-                        Verge</em></h3>
-                    <p> The article explains YouTube’s new rules requiring creators to disclose
-                        AI-generated material. It’s an example of how tech companies are taking
-                        early steps toward transparency. This resource is valuable because it
-                        connects policy ideas to real platform changes. </p>
-                    <a href="https://www.theverge.com/" target="_blank">Read more →</a>
-                </div>
-                <div class="source">
-                    <h3>4. “Algorithmic Amplification and Misinformation” — <em>Nature</em></h3>
-                    <p> This research paper explains how engagement-based recommendation systems
-                        promote divisive or misleading content. It’s helpful for understanding the
-                        science of social media influence and its connection to political
-                        polarization. </p>
-                    <a href="https://www.nature.com/" target="_blank">Read more →</a>
-                </div>
-                <div class="source">
-                    <h3>5. “Social Learning and PRIME Information” — <em>PNAS</em></h3>
-                    <p> This article introduces the concept of <strong>PRIME
-                        information</strong>—Prestigious, In-group, Moral, and Emotional content. It
-                        explains how algorithms amplify natural human learning biases, making
-                        misinformation more appealing and viral. The authors also suggest possible
-                        reforms, such as transparency tools and limiting PRIME amplification. </p>
-                    <a href="https://www.pnas.org/" target="_blank">Read more →</a>
-                </div>
-            </section>
-            <section>
-                <h2>Learn More and Explore</h2>
-                <ul>
-                    <li>
-                        <a href="https://alltechishuman.org/resources" target="_blank">All Tech is
-                            Human – Content Moderation Resources</a>
-                    </li>
-                    <li>
-                        <a href="https://manipulatedmedia.org/" target="_blank">Manipulated Media
-                            Detection – Web Essay</a>
-                    </li>
-                    <li>
-                        <a href="https://www.futureoflife.org/" target="_blank">Future of Life
-                            Institute – AI Policy & Ethics</a>
-                    </li>
-                </ul>
-            </section>
+                <div class="quiz-feedback" style="margin-top:.5rem;"></div>
+            </div>
+            <p style="margin-top:.6rem;">After trying the quiz: consider training your team on a
+                verification protocol (a one-minute callback confirmation for high-value
+                requests).</p>
+        </section>
+        <section id="ai-honesty" class="section-block" aria-labelledby="ai-heading">
+            <h2 id="ai-heading" style="color:#fff">How I used AI in creating this guide</h2>
+            <p> I used AI tools to help draft initial summaries and brainstorm interactive concepts.
+                I edited and substantially revised all content, performed the annotations, and
+                selected the resources personally. The Zotero selection, ordering, and the
+                professional recommendations are my own. This is a human-curated resource that
+                leverages AI as an assistant — not as the final author. </p>
+            <p style="margin-top:.6rem;">
+                <strong>Badge:</strong>
+                <span class="badge-ai">AI-Assisted — Edited & Curated by Human</span>
+            </p>
+        </section>
+        <section class="section-block" aria-labelledby="wireframe-heading">
+            <h2 id="wireframe-heading" style="color:#fff">Wireframe summary & next steps
+                (implementation plan)</h2>
+            <ol style="color:#E8F0FF;">
+                <li>Finalize the SVG into an interactive D3 network with clickable nodes and
+                    explanations.</li>
+                <li>Expand the quiz into multiple scenarios and capture (non-personal) analytics to
+                    show engagement.</li>
+                <li>Create a short "how-to verify" checklist PDF and add it as a downloadable asset
+                    in the Zotero group.</li>
+                <li>Periodically update the Zotero library with new regulation trackers and major
+                    detection-tool tests.</li>
+            </ol>
+            <p style="margin-top:.6rem;">These deliverables map to competencies employers value:
+                verification, digital literacy training, vendor governance, and practical UX for
+                trust & safety.</p>
+        </section>
+        <script>
+            (function () {
+                const btn = document.getElementById('darkToggle');
+                const body = document.body;
+                // initialize
+                btn.addEventListener('click', () = > {
+                    body.classList.toggle('dark-mode');
+                    const pressed = body.classList.contains('dark-mode');
+                    btn.setAttribute('aria-pressed', pressed ? 'true': 'false');
+                });
+            })();
+            (function () {
+                const simulateBtn = document.getElementById('simulateBtn');
+                const pulse = document.getElementById('pulse');
+                const links = document.querySelectorAll('#misinfoSVG .link');
+                const center = document.getElementById('node0');
+                
+                function animatePulse() {
+                    pulse.setAttribute('r', 24);
+                    pulse.style.transition = 'none';
+                    pulse.style.opacity = '0.9';
+                    requestAnimationFrame(() = > {
+                        pulse.style.transition = 'r 1s ease-out, opacity 1s ease-out';
+                        pulse.setAttribute('r', 120);
+                        pulse.style.opacity = '0';
+                    });
+                    links.forEach((ln, i) = > {
+                        setTimeout(() = > {
+                            ln.style.stroke = '#FFD166';
+                            ln.style.strokeWidth = '3';
+                            setTimeout(() = > {
+                                ln.style.stroke = '#A8B6CC';
+                                ln.style.strokeWidth = '2';
+                            },
+                            900);
+                        },
+                        i * 120);
+                    });
+                }
+                
+                simulateBtn.addEventListener('click', animatePulse);
+                center.addEventListener('mouseenter', animatePulse);
+            })();
+            (function () {
+                document.querySelectorAll('.quiz-card').forEach(card = > {
+                    const buttons = card.querySelectorAll('.quiz-btn');
+                    const feedback = card.querySelector('.quiz-feedback');
+                    
+                    buttons.forEach(btn = > {
+                        btn.addEventListener('click', () = > {
+                            buttons.forEach(b = > b.classList.remove('correct', 'incorrect'));
+                            const isCorrect = btn.getAttribute('data-correct') === 'true';
+                            if (isCorrect) {
+                                btn.classList.add('correct');
+                                feedback.textContent = 'Correct — good verification practice.';
+                            } else {
+                                btn.classList.add('incorrect');
+                                feedback.textContent = 'Not the safest choice. Verify via a secondary channel first.';
+                            }
+                        });
+                    });
+                });
+            })();</script>
         <footer class="copyright">
             <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
                 <a property="dct:title" rel="cc:attributionURL"
                     href="http://dal5842.github.io/Portfolio/">Dannika's Portfolio</a> by <a
-                        rel="cc:attributionURL dct:creator" property="cc:attributionName"
-                        href="https://github.com/dal5842/Portfolio">Dannika Love</a> is licensed under
-                <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
+                    rel="cc:attributionURL dct:creator" property="cc:attributionName"
+                    href="https://github.com/dal5842/Portfolio">Dannika Love</a> is licensed under
+                    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
                     target="_blank" rel="license noopener noreferrer" style="display:inline-block;"
                     >CC BY-NC-ND 4.0 <img
                         style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
