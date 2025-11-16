@@ -229,14 +229,18 @@
         </main>
         <script>
             // Pulse Animation for Network SVG
+
             const simulateBtn = document.getElementById('simulateBtn');
             const pulse = document.getElementById('pulse');
+
+
             
-            simulateBtn.addEventListener('click', () = > {
+            simulateBtn.addEventListener('click', () => {
+
                 pulse.setAttribute('r', '24');
                 pulse.setAttribute('opacity', '0.8');
                 let radius = 24;
-                const interval = setInterval(() = > {
+                const interval = setInterval(() => {
                     radius += 2;
                     pulse.setAttribute('r', radius);
                     let opacity = Math.max(0, 0.8 - (radius -24) / 24);
@@ -247,8 +251,8 @@
             });
             
             // AI Spotting Quiz Logic
-            document.querySelectorAll('#quiz-ai .quiz-option').forEach(btn = > {
-                btn.addEventListener('click', () = > {
+            document.querySelectorAll('.quiz-option').forEach(btn => {
+                btn.addEventListener('click', () => {
                     const feedback = document.getElementById('ai-feedback');
                     if (btn.dataset.answer === 'correct') {
                         feedback.textContent = 'Correct! This is likely AI-generated.';
@@ -261,8 +265,8 @@
             });
             
             // Source Verification Quiz Logic
-            document.querySelectorAll('#quiz-source .quiz-option').forEach(btn = > {
-                btn.addEventListener('click', () = > {
+            document.querySelectorAll('.quiz-option').forEach(btn => {
+                btn.addEventListener('click', () => {
                     const feedback = document.getElementById('source-feedback');
                     if (btn.dataset.answer === 'correct') {
                         feedback.textContent = 'Correct! This is the most trustworthy headline.';
