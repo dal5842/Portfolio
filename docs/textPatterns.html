@@ -9,7 +9,7 @@
     </head>
     <body class="text-patterns">
         <h1> Dannika Love's Website (Portfolio) </h1>
-        <nav class="list">
+        <nav aria-label="Main navigation" class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,6 +22,15 @@
                 <li><a href="zotero.html">Zotero Analysis of AI</a></li>
             </ul>
         </nav>
+        <svg id="background-waves" preserveAspectRatio="none" viewBox="0 0 1440 320">
+            <path fill="#7CA1CC" fill-opacity="0.5">
+                <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+                    M0,160L80,165C160,170,320,180,480,200C640,220,800,250,960,240C1120,230,1280,190,1360,160L1440,130L1440,320L0,320Z;
+                    M0,140L80,150C160,160,320,180,480,200C640,220,800,240,960,220C1120,200,1280,140,1360,110L1440,80L1440,320L0,320Z;
+                    M0,160L80,165C160,170,320,180,480,200C640,220,800,250,960,240C1120,230,1280,190,1360,160L1440,130L1440,320L0,320Z"
+                    ></animate>
+            </path>
+        </svg>
         <h2>Overview Of Text Patterns:</h2>
         <p>This project is from Digit 100 and it explores patterns of word usage in different texts using tools like Voyant
             and AntConc. By analyzing word frequency, ngrams, and keywords in context (KWIC), we
