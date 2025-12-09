@@ -1,488 +1,384 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Dannika Love — AI, Misinformation & Trust (Guide)</title>
-        <link rel="stylesheet" href="style.css" />
-        <meta name="theme-color" content="#0b1220" />
-    </head>
-    <body class="cyber-bg">
-        <div id="progressBar" aria-hidden="true"></div>
-        <svg id="bgParticles" aria-hidden="true" style="position:fixed;inset:0;z-index:-2;pointer-events:none" width="100%" height="100%" viewBox="0 0 800 600" preserveAspectRatio="none">
-            <defs><linearGradient id="gC" x1="0" x2="1"><stop offset="0" stop-color="#042f4a"/><stop offset="1" stop-color="#071734"/></linearGradient></defs>
-            <rect width="100%" height="100%" fill="url(#gC)"></rect>
-            <g id="particles" fill="#00ffcc" opacity="0.06">
-                <circle cx="100" cy="120" r="6"><animate attributeName="cx" values="100;700;100" dur="18s" repeatCount="indefinite" /></circle>
-                <circle cx="200" cy="400" r="4"><animate attributeName="cy" values="400;50;400" dur="14s" repeatCount="indefinite" /></circle>
-                <circle cx="600" cy="200" r="8"><animate attributeName="cx" values="600;120;600" dur="26s" repeatCount="indefinite" /></circle>
-                <circle cx="420" cy="80" r="3"><animate attributeName="cy" values="80;500;80" dur="12s" repeatCount="indefinite" /></circle>
-            </g>
-        </svg>
-        <nav aria-label="Main navigation" class="main-nav">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="gallery.html">Gallery</a>
-                </li>
-                <li>
-                    <a href="resume.html">Resume</a>
-                </li>
-                <li>
-                    <a href="reflection.html">Reflection</a>
-                </li>
-                <li>
-                    <a href="textPatterns.html">Text Patterns</a>
-                </li>
-                <li>
-                    <a href="gameAnalysis.html">Game Analysis</a>
-                </li>
-                <li>
-                    <a href="javaScriptPractice.html">Java Script Practice</a>
-                </li>
-                <li>
-                    <a href="zotero.html">Zotero Analysis of AI</a>
-                </li>
-            </ul>
-        </nav>
-        <svg id="background-waves" preserveAspectRatio="none" viewBox="0 0 1440 320">
-            <path fill="#7CA1CC" fill-opacity="0.5">
-                <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
-                    M0,160L80,165C160,170,320,180,480,200C640,220,800,250,960,240C1120,230,1280,190,1360,160L1440,130L1440,320L0,320Z;
-                    M0,140L80,150C160,160,320,180,480,200C640,220,800,240,960,220C1120,200,1280,140,1360,110L1440,80L1440,320L0,320Z;
-                    M0,160L80,165C160,170,320,180,480,200C640,220,800,250,960,240C1120,230,1280,190,1360,160L1440,130L1440,320L0,320Z"
-                ></animate>
-            </path>
-        </svg>
-        <header class="guide-hero">
-            <h1>AI, Misinformation & Trust</h1>
-            <p class="sub">A practical cyber-themed guide to spotting deepfakes, understanding AI
-                hallucinations, and maintaining professional credibility.</p>
-            <div class="toc" role="navigation" aria-label="Guide sections">
-                <a href="#essay">Essay</a>
-                <a href="#practical">Guide</a>
-                <a href="#svg-network">Network</a>
-                <a href="#svg-lifecycle">Lifecycle</a>
-                <a href="#quiz-ai">AI Quiz</a>
-                <a href="#quiz-source">Source Quiz</a>
-                <a href="#zotero">Zotero</a>
-                <a href="#recommended-images">Images</a>
-            </div>
-            <button id="modeToggle" class="mode-toggle" aria-pressed="false"
-                title="Toggle dark mode">
-                <span id="modeIcon">🌙</span>
-                <span class="sr-only">Toggle theme</span>
-            </button>
-        </header>
-        <main>
-            <section id="essay" class="section-block">
-                <h2>Essay: AI, Misinformation, and Trust in the Digital Era</h2>
-                <p>In today’s media landscape, artificial intelligence has become a double-edged
-                    sword. On one hand, AI tools enable efficient information delivery and
-                    innovative storytelling; on the other hand, they accelerate misinformation in
-                    unprecedented ways. Deepfakes, algorithmically amplified content, and
-                    AI-generated text challenge traditional notions of trust, requiring
-                    professionals to adapt quickly to maintain credibility in their work.</p>
-                <p>Consider deepfakes: realistic, AI-generated videos that can manipulate
-                    appearances, voices, and context. These tools are no longer confined to
-                    high-tech labs—they are accessible to anyone with a laptop and basic training.
-                    According to research from CEPR/VoxEU, AI-generated misinformation alters trust
-                    patterns and influences market demand for credible news. Professionals cannot
-                    simply rely on intuition; they must implement verification processes in their
-                    workflows.</p>
-                <p>Similarly, AI hallucinations—where large language models generate confident yet
-                    false statements—pose operational and reputational risks. IBM’s research
-                    explains that understanding hallucinations allows teams to design verification
-                    layers and set realistic expectations for outputs. SeniorExecutive emphasizes
-                    that these risks extend to board-level concerns, making governance and ethical
-                    oversight essential.</p>
-                <p>To translate these ideas into practice, this guide blends clear orientation
-                    strategies with professional-level verification techniques.</p>
-                <p>To contextualize these issues, UPenn’s Milton Wolf Seminar connects media
-                    manipulation with diplomacy, revealing how misinformation can influence global
-                    communication. Skywork’s evaluations of AI humanizer tools highlight the
-                    detection-evasion arms race and the need for multi-layered defenses—technical,
-                    educational, and policy-driven.</p>
-                <p>Ultimately, combating misinformation is not solely a technical problem. It is a
-                    human problem: humans read, share, and respond to content. Recognizing biases,
-                    implementing verification protocols, and educating teams can mitigate harm. For
-                    professionals in digital media and technology, mastering these skills is
-                    critical—not only for ethical responsibility, but also for sustaining trust,
-                    reputation, and influence in their fields.</p>
-                <p>
-                    <strong>MLA References:</strong>
-                </p>
-                <ul>
-                    <li>CEPR/VoxEU. “AI Misinformation and the Value of Trusted News.” 2025.</li>
-                    <li>IBM. “What Are AI Hallucinations?” IBM Think, 2025.</li>
-                    <li>UPenn Milton Wolf Seminar. “Media & Diplomacy.” 2025.</li>
-                    <li>SeniorExecutive. “AI Model Hallucinations: Risks.” 2025.</li>
-                    <li>Skywork. “I Tested 12 AI Humanizers — Bypassing Detection.” 2025.</li>
-                </ul>
-            </section>
-            <section id="practical" class="section-block">
-                <h2>Guide: Quick Orientation & Practical Steps</h2>
-                <div class="resource-item">
-                    <h3>Recognize</h3>
-                    <p>Look for mismatched shadows, unnatural phrasing, or sources with vague
-                        credibility indicators. Misinformation often feels urgent or emotional.</p>
-                </div>
-                <div class="resource-item">
-                    <h3>Verify</h3>
-                    <ol>
-                        <li>Check the original publisher.</li>
-                        <li>Use reverse-image search tools.</li>
-                        <li>Compare claims across reputable outlets.</li>
-                    </ol>
-                </div>
-                <div class="resource-item">
-                    <h3>Respond</h3>
-                    <p>Professionals should document verification steps and present corrections
-                        clearly and calmly. Transparency builds trust.</p>
-                </div>
-                <div class="guide-callout">
-                    <strong>Pro Tip:</strong> If something demands your instant reaction, slow down.
-                    Urgency is a persuasion tactic. </div>
-            </section>
-            <!-- INTERACTIVE SVG NETWORK -->
-            <section id="svg-network" class="section-block">
-                <h2>Interactive Network: How Misinformation Spreads</h2>
-                <p>Click <em>Simulate Spread</em> to visualize how false information can ripple
-                    through interconnected networks.</p>
-                <div class="svg-wrap" id="svg-playground" aria-hidden="false">
-                    <svg id="misinfoSVG" width="600" height="280" viewBox="0 0 600 280" role="img"
-                        aria-label="Network visualization">
-                        <defs>
-                            <radialgradient id="g1">
-                                <stop offset="0%" stop-color="#FFD166"></stop>
-                                <stop offset="100%" stop-color="#F95738"></stop>
-                            </radialgradient>
-                        </defs>
-                        <!-- central origin node -->
-                        <circle id="node0" cx="300" cy="140" r="22" fill="url(#g1)" stroke="#0b1220"
-                            stroke-width="2"></circle>
-                        <text x="300" y="145" text-anchor="middle" font-size="12" fill="#0b1220"
-                            font-weight="700">Origin</text>
-                        <!-- left cluster -->
-                        <g class="cluster" fill="#7CA1CC">
-                            <circle cx="160" cy="70" r="12"></circle>
-                            <circle cx="200" cy="110" r="12"></circle>
-                            <circle cx="120" cy="120" r="12"></circle>
-                            <circle cx="180" cy="170" r="12"></circle>
-                        </g>
-                        <!-- right cluster -->
-                        <g class="cluster" fill="#7CA1CC">
-                            <circle cx="440" cy="70" r="12"></circle>
-                            <circle cx="480" cy="110" r="12"></circle>
-                            <circle cx="520" cy="160" r="12"></circle>
-                            <circle cx="400" cy="180" r="12"></circle>
-                        </g>
-                        <!-- connecting lines -->
-                        <line x1="300" y1="140" x2="160" y2="70" stroke="#A8B6CC" stroke-width="2"></line>
-                        <line x1="300" y1="140" x2="200" y2="110" stroke="#A8B6CC" stroke-width="2"></line>
-                        <line x1="300" y1="140" x2="120" y2="120" stroke="#A8B6CC" stroke-width="2"></line>
-                        <line x1="300" y1="140" x2="180" y2="170" stroke="#A8B6CC" stroke-width="2"></line>
-                        <line x1="300" y1="140" x2="440" y2="70" stroke="#A8B6CC" stroke-width="2"></line>
-                        <line x1="300" y1="140" x2="480" y2="110" stroke="#A8B6CC" stroke-width="2"></line>
-                        <line x1="300" y1="140" x2="520" y2="160" stroke="#A8B6CC" stroke-width="2"></line>
-                        <line x1="300" y1="140" x2="400" y2="180" stroke="#A8B6CC" stroke-width="2"></line>
-                        <!-- pulse animation ring -->
-                        <circle id="pulse" cx="300" cy="140" r="24" fill="none" stroke="#FFD166"
-                            stroke-width="2" opacity="0.8"></circle>
-                    </svg>
-                </div>
-                <div style="text-align:center; margin-top:0.6rem;">
-                    <button id="simulateBtn" class="button">Simulate Spread</button>
-                </div>
-            </section>
-            <!-- MISINFORMATION LIFECYCLE SVG -->
-            <section id="svg-lifecycle" class="section-block">
-                <h2>Misinformation Lifecycle</h2>
-                <p>This diagram illustrates the typical journey of a misinformation post.</p>
-                <svg width="600" height="250" viewBox="0 0 600 250" role="img"
-                    aria-label="Misinformation lifecycle flowchart">
-                    <rect x="50" y="40" width="120" height="40" fill="#FFD166" stroke="#000"></rect>
-                    <text x="110" y="65" text-anchor="middle">Creation</text>
-                    <rect x="200" y="40" width="120" height="40" fill="#F95738" stroke="#000"></rect>
-                    <text x="260" y="65" text-anchor="middle">Sharing</text>
-                    <rect x="350" y="40" width="120" height="40" fill="#7CA1CC" stroke="#000"></rect>
-                    <text x="410" y="65" text-anchor="middle">Amplification</text>
-                    <rect x="500" y="40" width="120" height="40" fill="#06D6A0" stroke="#000"></rect>
-                    <text x="560" y="65" text-anchor="middle">Correction</text>
-                    <defs>
-                        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3"
-                            orient="auto" markerUnits="strokeWidth">
-                            <path d="M0,0 L0,6 L9,3 z" fill="#000"></path>
-                        </marker>
-                    </defs>
-                    <line x1="170" y1="60" x2="200" y2="60" stroke="#000" stroke-width="2"
-                        marker-end="url(#arrow)"></line>
-                    <line x1="320" y1="60" x2="350" y2="60" stroke="#000" stroke-width="2"
-                        marker-end="url(#arrow)"></line>
-                    <line x1="470" y1="60" x2="500" y2="60" stroke="#000" stroke-width="2"
-                        marker-end="url(#arrow)"></line>
-                </svg>
-            </section>
-            <!-- QUIZ #1 -->
-            <section id="quiz-ai" class="section-block">
-                <h2>Quiz: Spot the AI-Generated Text</h2>
-                <div class="quiz-card">
-                    <p id="ai-question">Which of the following is most likely AI-generated?</p>
-                    <button class="quiz-option" data-answer="wrong"> “I love going to the farmer’s
-                        market every Saturday.” </button>
-                    <button class="quiz-option" data-answer="correct"> “The quantum flux paradigm
-                        disrupts narrative coherence in unexpected ways.” </button>
-                    <button class="quiz-option" data-answer="wrong"> “Coffee tastes better in the
-                        morning with friends.” </button>
-                    <p id="ai-feedback" aria-live="polite"></p>
-                </div>
-            </section>
-            <!-- QUIZ #2 -->
-            <section id="quiz-source" class="section-block">
-                <h2>Quiz: Verify the Source</h2>
-                <div class="quiz-card">
-                    <p id="source-question">Which headline seems the most trustworthy?</p>
-                    <button class="quiz-option" data-answer="correct"> “CDC Confirms New Vaccine
-                        Guidelines for 2025” </button>
-                    <button class="quiz-option" data-answer="wrong"> “Celebrity Declares Moon
-                        Landing Was Fake!” </button>
-                    <button class="quiz-option" data-answer="wrong"> “Anonymous Blog Predicts World
-                        Ending in 2025” </button>
-                    <p id="source-feedback" aria-live="polite"></p>
-                </div>
-            </section>
-            <section id="hallucinator" class="section-block">
-                <h2>Mini Demo: How an AI Hallucinates</h2>
-                <p>Type a short prompt and click <em>Generate</em> to see a "hallucinated" answer.</p>
-                <div class="hallucinator-ui">
-                    <textarea id="hall-input" rows="2" placeholder="Ask something simple..."></textarea>
-                    <div>
-                        <button id="hall-generate" class="button">Generate</button>
-                        <button id="hall-clear" class="button">Clear</button>
-                    </div>
-                    <div id="hall-output" aria-live="polite" class="resource-item" style="margin-top:1rem;">
-                        <em>Results will appear here.</em>
-                    </div>
-                </div>
-            </section>
-            <section id="zotero" class="section-block">
-                <h2>Zotero Library Shout-Outs</h2>
-                <ul>
-                    <li>Your MLA references above are from the shared Zotero research group.</li>
-                    <li>
-                        <a
-                            href="https://www.zotero.org/groups/6200705/d4_dl_deepfakesmisinformationwsocialmedia/library"
-                            target="_blank">View Zotero Library</a>
-                    </li>
-                </ul>
-            </section>
-            <!-- IMAGE GALLERY (COMBINED) -->
-            <section id="recommended-images" class="section-block">
-                <h2>Example Images — download & view original</h2>
-                <p>Thumbnails below show the placeholder images included in your downloadable
-                    ZIP.</p>
-                <figure>
-                    <img src="images/DeepFakeEx.jpg" alt="Deepfake placeholder" />
-                    <figcaption> Deepfake illustration — <a
-                            href="https://share.google/images/4RbNbxVKZjPROBxkT" target="_blank"
-                            >Download original</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/VerificationCheckEx.png"
-                        alt="Verification / fact checking graphic" />
-                    <figcaption> Verification graphic — <a
-                            href="https://share.google/images/Mz5rqDO6KQpRYGP4r" target="_blank"
-                            >Download original</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/AINetwork.png" alt="AI network visualization placeholder" />
-                    <figcaption> AI network visualization — <a
-                            href="https://share.google/images/PEDRRm8bJXf5ZYdHE" target="_blank"
-                            >Download original</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/DigitalCodeEx.jpg" alt="Digital code background" />
-                    <figcaption> Digital code background — <a
-                            href="https://share.google/images/g1XA2jE1X77lCIvWo" target="_blank"
-                            >Download original</a>
-                    </figcaption>
-                </figure>
-            </section>
-        </main>
-        <!-- JAVASCRIPT  -->
-        <script>
-            window.addEventListener('load', () = > {
-                document.body.classList.add('loaded');
-            });
-            /* PULSE ANIMATION */
-            const simulateBtn = document.getElementById('simulateBtn');
-            const pulse = document.getElementById('pulse');
-            
-            if (simulateBtn && pulse) {
-                simulateBtn.addEventListener('click', () = > {
-                    let startRadius = 24;
-                    let max = 120;
-                    let duration = 700;
-                    let startTime = null;
-                    
-                    function animate(ts) {
-                        if (! startTime) startTime = ts;
-                        const elapsed = ts - startTime;
-                        const progress = Math.min(1, elapsed / duration);
-                        const currentRadius = startRadius + (max - startRadius) * progress;
-                        
-                        pulse.setAttribute('r', currentRadius);
-                        pulse.setAttribute('opacity', (1 - progress) * 0.9);
-                        
-                        if (progress < 1) requestAnimationFrame(animate); else {
-                            pulse.setAttribute('r', startRadius);
-                            pulse.setAttribute('opacity', '0.8');
-                        }
-                    }
-                    
-                    requestAnimationFrame(animate);
-                });
-            }
-            
-            /* QUIZ LOGIC */
-            const aiButtons = document.querySelectorAll('#quiz-ai .quiz-option');
-            aiButtons.forEach(btn = > {
-                btn.addEventListener('click', () = > {
-                    const feedback = document.getElementById('ai-feedback');
-                    if (btn.dataset.answer === 'correct') {
-                        feedback.textContent = 'Correct! This line is likely AI-generated.';
-                        feedback.style.color = '#00ff99';
-                    } else {
-                        feedback.textContent = 'Incorrect. This is typical human writing.';
-                        feedback.style.color = '#ff4d4d';
-                    }
-                });
-            });
-            
-            const sourceButtons = document.querySelectorAll('#quiz-source .quiz-option');
-            sourceButtons.forEach(btn = > {
-                btn.addEventListener('click', () = > {
-                    const feedback = document.getElementById('source-feedback');
-                    if (btn.dataset.answer === 'correct') {
-                        feedback.textContent = 'Correct! This is a reliable headline.';
-                        feedback.style.color = '#00ff99';
-                    } else {
-                        feedback.textContent = 'Misleading or not credible.';
-                        feedback.style.color = '#ff4d4d';
-                    }
-                });
-            });
-            // DARK MODE TOGGLE
-            (function () {
-                const btn = document.getElementById('modeToggle');
-                const icon = document.getElementById('modeIcon');
-                if (! btn) return;
-                // initialize from storage
-                if (localStorage.getItem('site-mode') === 'dark') {
-                    document.body.classList.add('dark-mode');
-                    btn.setAttribute('aria-pressed', 'true');
-                    icon.textContent = '🌞';
-                }
-                btn.addEventListener('click', () = > {
-                    const isDark = document.body.classList.toggle('dark-mode');
-                    btn.setAttribute('aria-pressed', String(isDark));
-                    icon.textContent = isDark ? '🌞': '🌙';
-                    localStorage.setItem('site-mode', isDark ? 'dark': 'light');
-                });
-            })();
-            // Hallucination demo attempt
-            (() = > {
-                const input = document.getElementById('hall-input');
-                const out = document.getElementById('hall-output');
-                const gen = document.getElementById('hall-generate');
-                const clr = document.getElementById('hall-clear');
-                
-                function fabricateResponse(prompt) {
-                    // simple pseudo-rhetorical hallucination generator:
-                    const templates =[
-                    `Based on limited signals, it's plausible that ${prompt} results from a complex interplay of systemic factors.`,
-                    `Experts tentatively suggest that ${prompt} may correlate with emergent narrative shifts in the data.`,
-                    `While not verified, some models infer that ${prompt} indicates a probable trend in the dataset.`,];
-                    // choose one and add confident-sounding filler
-                    const t = templates[Math.floor(Math.random() * templates.length)];
-                    const fillers =[ 'This conclusion, while speculative, is often repeated in sampled outputs.', 'Further verification is required — treat with caution.', 'Reported confidence: 92% (model estimate).'];
-                    return `${t}\n\n${fillers[Math.floor(Math.random()*fillers.length)]}`;
-                }
-                
-                if (gen) gen.addEventListener('click', () = > {
-                    const val = input.value.trim();
-                    if (! val) {
-                        out.textContent = 'Please enter a short prompt to try the demo.'; return;
-                    }
-                    out.textContent = 'Generating…';
-                    setTimeout(() = > {
-                        out.textContent = fabricateResponse(val);
-                    },
-                    600 + Math.random() * 800);
-                });
-                
-                if (clr) clr.addEventListener('click', () = > {
-                    input.value = '';
-                    out.innerHTML = '<em>Results will appear here.</em>';
-                });
-            })();
-            // Progress bar
-(function(){
-  const bar = document.getElementById('progressBar');
-  if (!bar) return;
-  function updateBar(){
-    const h = document.documentElement;
-    const scroll = h.scrollTop || document.body.scrollTop;
-    const height = h.scrollHeight - h.clientHeight;
-    const pct = (scroll / height) * 100;
-    bar.style.width = Math.min(100, Math.max(0, pct)) + '%';
-  }
-  window.addEventListener('scroll', updateBar, { passive: true });
-  window.addEventListener('resize', updateBar);
-  updateBar();
-})();
-// Intersection Observer to reveal .reveal elements
-(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('show');
-      }
-    });
-  }, { threshold: 0.15 });
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dannika Love — AI, Misinformation & Trust (Guide) — B</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0b1220" />
+</head>
+<body class="cyber-bg">
+  <div id="progressBar" aria-hidden="true"></div>
+  <nav aria-label="Main navigation" class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="zotero-B.html" class="active">Zotero: AI & Misinformation</a></li>
+    </ul>
+  </nav>
+    <!-- Floating Background Bubbles -->
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+  <header class="guide-hero">
+    <h1>AI, Misinformation & Trust</h1>
+    <p class="sub">A practical cyber-themed guide to spotting deepfakes, understanding AI hallucinations, and maintaining professional credibility.</p>
 
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-})();
-        </script>
-        <footer class="copyright">
-            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-                <a property="dct:title" rel="cc:attributionURL"
-                    href="http://dal5842.github.io/Portfolio/">Dannika's Portfolio</a> by <a
-                    rel="cc:attributionURL dct:creator" property="cc:attributionName"
-                    href="https://github.com/dal5842/Portfolio">Dannika Love</a> is licensed under
-                    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
-                    target="_blank" rel="license noopener noreferrer" style="display:inline-block;"
-                    >CC BY-NC-ND 4.0 <img
-                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
-                        alt="" />
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
-                        alt="" />
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
-                        alt="" />
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"
-                        alt="" /></a></p>
-        </footer>
-    </body>
+    <div class="toc" role="navigation" aria-label="Guide sections">
+      <a href="#essay">Essay</a>
+      <a href="#practical">Guide</a>
+      <a href="#svg-network">Network</a>
+      <a href="#svg-lifecycle">Lifecycle</a>
+      <a href="#quiz-ai">AI Quiz</a>
+      <a href="#quiz-source">Source Quiz</a>
+      <a href="#recommended-images">Images</a>
+    </div>
+
+    <!-- Dark mode toggle -->
+    <button id="modeToggle" class="mode-toggle" aria-pressed="false" title="Toggle dark mode">
+      <span id="modeIcon">🌙</span>
+      <span class="sr-only">Toggle theme</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- Essay preserved -->
+    <section id="essay" class="section-block reveal">
+      <h2>Essay: AI, Misinformation, and Trust in the Digital Era</h2>
+      <p>In today’s media landscape, artificial intelligence has become a double-edged sword. On one hand, AI tools enable efficient information delivery and innovative storytelling; on the other hand, they accelerate misinformation in unprecedented ways. Deepfakes, algorithmically amplified content, and AI-generated text challenge traditional notions of trust, requiring professionals to adapt quickly to maintain credibility in their work.</p>
+      <p>Consider deepfakes: realistic, AI-generated videos that can manipulate appearances, voices, and context. These tools are no longer confined to high-tech labs—they are accessible to anyone with a laptop and basic training. According to research from CEPR/VoxEU, AI-generated misinformation alters trust patterns and influences market demand for credible news. Professionals cannot simply rely on intuition; they must implement verification processes in their workflows.</p>
+      <p>Similarly, AI hallucinations—where large language models generate confident yet false statements—pose operational and reputational risks. IBM’s research explains that understanding hallucinations allows teams to design verification layers and set realistic expectations for outputs. SeniorExecutive emphasizes that these risks extend to board-level concerns, making governance and ethical oversight essential.</p>
+      <p>To translate these ideas into practice, this guide blends clear orientation strategies with professional-level verification techniques.</p>
+      <p>Ultimately, combating misinformation is not solely a technical problem. It is a human problem: humans read, share, and respond to content. Recognizing biases, implementing verification protocols, and educating teams can mitigate harm. For professionals in digital media and technology, mastering these skills is critical—not only for ethical responsibility, but also for sustaining trust, reputation, and influence in their fields.</p>
+
+      <p><strong>MLA References:</strong></p>
+      <ul>
+        <li>CEPR/VoxEU. “AI Misinformation and the Value of Trusted News.” 2025.</li>
+        <li>IBM. “What Are AI Hallucinations?” IBM Think, 2025.</li>
+        <li>UPenn Milton Wolf Seminar. “Media & Diplomacy.” 2025.</li>
+        <li>SeniorExecutive. “AI Model Hallucinations: Risks.” 2025.</li>
+        <li>Skywork. “I Tested 12 AI Humanizers — Bypassing Detection.” 2025.</li>
+      </ul>
+    </section>
+
+    <!-- PRACTICAL GUIDE: -->
+    <section id="practical" class="section-block reveal">
+      <h2>Guide: Quick Orientation & Practical Steps</h2>
+
+      <div class="resource-item">
+        <h3>Recognize</h3>
+        <p>Look for mismatched shadows, unnatural phrasing, or sources with vague credibility indicators. Misinformation often feels urgent or emotional.</p>
+      </div>
+
+      <div class="resource-item">
+        <h3>Verify</h3>
+        <ol>
+          <li>Check the original publisher.</li>
+          <li>Use reverse-image search tools.</li>
+          <li>Compare claims across reputable outlets.</li>
+        </ol>
+      </div>
+
+      <div class="resource-item">
+        <h3>Respond</h3>
+        <p>Professionals should document verification steps and present corrections clearly and calmly. Transparency builds trust.</p>
+      </div>
+
+      <div class="guide-callout">
+        <strong>Pro Tip:</strong> If something demands your instant reaction, slow down. Urgency is a persuasion tactic.
+      </div>
+    </section>
+
+    <!-- SVG network -->
+    <section id="svg-network" class="section-block reveal">
+      <h2>Interactive Network: How Misinformation Spreads</h2>
+      <p>Click <em>Simulate Spread</em> to visualize how false information can ripple through interconnected networks.</p>
+
+      <div class="svg-wrap" id="svg-playground" aria-hidden="false">
+        <svg id="misinfoSVG" width="600" height="280" viewBox="0 0 600 280" role="img" aria-label="Network visualization">
+          <defs>
+            <radialGradient id="g1">
+              <stop offset="0%" stop-color="#FFD166"></stop>
+              <stop offset="100%" stop-color="#F95738"></stop>
+            </radialGradient>
+          </defs>
+
+          <circle id="node0" cx="300" cy="140" r="22" fill="url(#g1)" stroke="#0b1220" stroke-width="2"></circle>
+          <text x="300" y="145" text-anchor="middle" font-size="12" fill="#0b1220" font-weight="700">Origin</text>
+
+          <g class="cluster" fill="#7CA1CC">
+            <circle cx="160" cy="70" r="12"></circle>
+            <circle cx="200" cy="110" r="12"></circle>
+            <circle cx="120" cy="120" r="12"></circle>
+            <circle cx="180" cy="170" r="12"></circle>
+          </g>
+
+          <g class="cluster" fill="#7CA1CC">
+            <circle cx="440" cy="70" r="12"></circle>
+            <circle cx="480" cy="110" r="12"></circle>
+            <circle cx="520" cy="160" r="12"></circle>
+            <circle cx="400" cy="180" r="12"></circle>
+          </g>
+
+          <line x1="300" y1="140" x2="160" y2="70" stroke="#A8B6CC" stroke-width="2"></line>
+          <line x1="300" y1="140" x2="200" y2="110" stroke="#A8B6CC" stroke-width="2"></line>
+          <line x1="300" y1="140" x2="120" y2="120" stroke="#A8B6CC" stroke-width="2"></line>
+          <line x1="300" y1="140" x2="180" y2="170" stroke="#A8B6CC" stroke-width="2"></line>
+          <line x1="300" y1="140" x2="440" y2="70" stroke="#A8B6CC" stroke-width="2"></line>
+          <line x1="300" y1="140" x2="480" y2="110" stroke="#A8B6CC" stroke-width="2"></line>
+          <line x1="300" y1="140" x2="520" y2="160" stroke="#A8B6CC" stroke-width="2"></line>
+          <line x1="300" y1="140" x2="400" y2="180" stroke="#A8B6CC" stroke-width="2"></line>
+
+          <circle id="pulse" cx="300" cy="140" r="24" fill="none" stroke="#FFD166" stroke-width="2" opacity="0.8"></circle>
+        </svg>
+      </div>
+
+      <div style="text-align:center; margin-top:0.6rem;">
+        <button id="simulateBtn" class="button">Simulate Spread</button>
+      </div>
+    </section>
+
+    <!-- lifecycle -->
+    <section id="svg-lifecycle" class="section-block reveal">
+      <h2>Misinformation Lifecycle</h2>
+      <p>This diagram illustrates the typical journey of a misinformation post.</p>
+      <svg width="600" height="250" viewBox="0 0 600 250" role="img" aria-label="Misinformation lifecycle flowchart">
+        <rect x="50" y="40" width="120" height="40" fill="#FFD166" stroke="#000"></rect>
+        <text x="110" y="65" text-anchor="middle">Creation</text>
+        <rect x="200" y="40" width="120" height="40" fill="#F95738" stroke="#000"></rect>
+        <text x="260" y="65" text-anchor="middle">Sharing</text>
+        <rect x="350" y="40" width="120" height="40" fill="#7CA1CC" stroke="#000"></rect>
+        <text x="410" y="65" text-anchor="middle">Amplification</text>
+        <rect x="500" y="40" width="120" height="40" fill="#06D6A0" stroke="#000"></rect>
+        <text x="560" y="65" text-anchor="middle">Correction</text>
+
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#000"></path>
+          </marker>
+        </defs>
+
+        <line x1="170" y1="60" x2="200" y2="60" stroke="#000" stroke-width="2" marker-end="url(#arrow)"></line>
+        <line x1="320" y1="60" x2="350" y2="60" stroke="#000" stroke-width="2" marker-end="url(#arrow)"></line>
+        <line x1="470" y1="60" x2="500" y2="60" stroke="#000" stroke-width="2" marker-end="url(#arrow)"></line>
+      </svg>
+    </section>
+
+    <!-- Quizzes -->
+    <section id="quiz-ai" class="section-block reveal">
+      <h2>Quiz: Spot the AI-Generated Text</h2>
+      <div class="quiz-card">
+        <p id="ai-question">Which of the following is most likely AI-generated?</p>
+        <button class="quiz-option" data-answer="wrong">I love going to the farmer’s market every Saturday.</button>
+        <button class="quiz-option" data-answer="correct">The quantum flux paradigm disrupts narrative coherence in unexpected ways.</button>
+        <button class="quiz-option" data-answer="wrong">Coffee tastes better in the morning with friends.</button>
+        <p id="ai-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="quiz-source" class="section-block reveal">
+      <h2>Quiz: Verify the Source</h2>
+      <div class="quiz-card">
+        <p id="source-question">Which headline seems the most trustworthy?</p>
+        <button class="quiz-option" data-answer="correct">CDC Confirms New Vaccine Guidelines for 2025</button>
+        <button class="quiz-option" data-answer="wrong">Celebrity Declares Moon Landing Was Fake!</button>
+        <button class="quiz-option" data-answer="wrong">Anonymous Blog Predicts World Ending in 2025</button>
+        <p id="source-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- NEW: Comparison slider -->
+    <section id="compare" class="section-block reveal">
+      <h2>Compare: Original vs Altered</h2>
+      <div class="img-compare" id="imgCompare">
+        <img src="images/ai-network-example.jpg" alt="Original" class="base" />
+        <div class="overlay"><img src="images/deepfake-example.jpg" alt="Altered" /></div>
+        <div class="handle" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+      </div>
+    </section>
+
+    <!-- Recommended images -->
+    <section id="recommended-images" class="section-block reveal">
+      <h2>Recommended Images — download & add to your images/ folder</h2>
+      <p>Click the links to get the original images and replace placeholders if you like.</p>
+
+        <figure>
+            <img src="images/DeepFakeEx.jpg" alt="Deepfake placeholder" />
+            <figcaption>Deepfake illustration — <a href="https://www.pexels.com/photo/human-face-illustration-1108099/" target="_blank">Download original</a></figcaption>
+        </figure>
+        <figure>
+            <img src="images/VerificationCheckEx.png" alt="Verification / fact checking graphic" />
+            <figcaption>Verification graphic — <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">Download original</a></figcaption>
+        </figure>
+        
+      <figure>
+          <img src="images/AINetwork.png" alt="AI network visualization placeholder" />
+        <figcaption>AI network visualization — <a href="https://unsplash.com/photos/Jztmx9yqjBw" target="_blank">Download original</a></figcaption>
+      </figure>
+
+      <figure>
+          <img src="images/DigitalCodeEx.jpg" alt="Digital code background" />
+        <figcaption>Digital code background — <a href="https://pixabay.com/photos/binary-code-abstract-technology-2695688/" target="_blank">Download original</a></figcaption>
+      </figure>
+
+      
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="copyright">
+    <p>
+      <a href="http://dal5842.github.io/Portfolio/">Dannika's Portfolio</a>
+      by <a href="https://github.com/dal5842/Portfolio">Dannika Love</a>
+      is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+    </p>
+  </footer>  <script>
+    // Page load fade-in
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    // Progress bar
+    (function(){
+      const bar = document.getElementById('progressBar');
+      if (!bar) return;
+      function updateBar(){
+        const h = document.documentElement;
+        const scroll = h.scrollTop || document.body.scrollTop;
+        const height = h.scrollHeight - h.clientHeight;
+        const pct = (scroll / height) * 100;
+        bar.style.width = Math.min(100, Math.max(0, pct)) + '%';
+      }
+      window.addEventListener('scroll', updateBar, { passive: true });
+      window.addEventListener('resize', updateBar);
+      updateBar();
+    })();
+
+    // Dark mode toggle with persistence
+    (function(){
+      const btn = document.getElementById('modeToggle');
+      const icon = document.getElementById('modeIcon');
+      if (!btn) return;
+      if (localStorage.getItem('site-mode') === 'dark') {
+        document.body.classList.add('dark-mode');
+        btn.setAttribute('aria-pressed', 'true');
+        icon.textContent = '🌞';
+      }
+      btn.addEventListener('click', () => {
+        const isDark = document.body.classList.toggle('dark-mode');
+        btn.setAttribute('aria-pressed', String(isDark));
+        icon.textContent = isDark ? '🌞' : '🌙';
+        localStorage.setItem('site-mode', isDark ? 'dark' : 'light');
+      });
+    })();
+
+    // IntersectionObserver reveal for .reveal elements
+    (function(){
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) e.target.classList.add('show');
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    })();
+
+    // Image comparison slider
+    (function(){
+      const wrap = document.getElementById('imgCompare');
+      if (!wrap) return;
+      const overlay = wrap.querySelector('.overlay');
+      const handle = wrap.querySelector('.handle');
+
+      function setPos(x) {
+        const rect = wrap.getBoundingClientRect();
+        const pct = Math.max(0, Math.min(1, (x - rect.left) / rect.width));
+        overlay.style.width = (pct * 100) + '%';
+        handle.style.left = (pct * 100) + '%';
+        handle.setAttribute('aria-valuenow', Math.round(pct * 100));
+      }
+
+      let dragging = false;
+      handle.addEventListener('mousedown', ()=> dragging = true);
+      window.addEventListener('mouseup', ()=> dragging = false);
+      window.addEventListener('mousemove', (e) => { if (dragging) setPos(e.clientX); });
+
+      handle.addEventListener('touchstart', ()=> dragging = true);
+      window.addEventListener('touchend', ()=> dragging = false);
+      window.addEventListener('touchmove', (e) => { if (dragging) setPos(e.touches[0].clientX); });
+
+      wrap.addEventListener('click', (e) => setPos(e.clientX));
+    })();
+
+    // Pulse animation for SVG
+    (function(){
+      const simulateBtn = document.getElementById('simulateBtn');
+      const pulse = document.getElementById('pulse');
+      if (simulateBtn && pulse) {
+        simulateBtn.addEventListener('click', () => {
+          let startRadius = 24;
+          let max = 120;
+          let duration = 700;
+          let startTime = null;
+
+          function animate(ts) {
+            if (!startTime) startTime = ts;
+            const elapsed = ts - startTime;
+            const progress = Math.min(1, elapsed / duration);
+            const currentRadius = startRadius + (max - startRadius) * progress;
+            pulse.setAttribute('r', currentRadius);
+            pulse.setAttribute('opacity', (1 - progress) * 0.9);
+            if (progress < 1) requestAnimationFrame(animate);
+            else {
+              pulse.setAttribute('r', startRadius);
+              pulse.setAttribute('opacity', '0.8');
+            }
+          }
+          requestAnimationFrame(animate);
+        });
+      }
+    })();
+
+    // Quiz logic
+    (function(){
+      const aiButtons = document.querySelectorAll('#quiz-ai .quiz-option');
+      aiButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const feedback = document.getElementById('ai-feedback');
+          if (btn.dataset.answer === 'correct') {
+            feedback.textContent = 'Correct! This line is likely AI-generated.';
+            feedback.style.color = '#00ff99';
+          } else {
+            feedback.textContent = 'Incorrect. This is typical human writing.';
+            feedback.style.color = '#ff4d4d';
+          }
+        });
+      });
+
+      const sourceButtons = document.querySelectorAll('#quiz-source .quiz-option');
+      sourceButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const feedback = document.getElementById('source-feedback');
+          if (btn.dataset.answer === 'correct') {
+            feedback.textContent = 'Correct! This is a reliable headline.';
+            feedback.style.color = '#00ff99';
+          } else {
+            feedback.textContent = 'Misleading or not credible.';
+            feedback.style.color = '#ff4d4d';
+          }
+        });
+      });
+    })();
+  </script>
+</body>
 </html>
