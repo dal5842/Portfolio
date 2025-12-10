@@ -29,6 +29,15 @@
         <div class="bubble"></div>
         <div class="bubble"></div>
     </div>
+  <svg id="background-waves" preserveAspectRatio="none" viewBox="0 0 1440 320">
+    <path fill="#7CA1CC" fill-opacity="0.5">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+        M0,160L80,165C160,170,320,180,480,200C640,220,800,250,960,240C1120,230,1280,190,1360,160L1440,130L1440,320L0,320Z;
+        M0,140L80,150C160,160,320,180,480,200C640,220,800,240,960,220C1120,200,1280,140,1360,110L1440,80L1440,320L0,320Z;
+        M0,160L80,165C160,170,320,180,480,200C640,220,800,250,960,240C1120,230,1280,190,1360,160L1440,130L1440,320L0,320Z"
+        ></animate>
+    </path>
+  </svg>
   <header class="guide-hero">
     <h1>AI, Misinformation & Trust</h1>
     <p class="sub">A practical cyber-themed guide to spotting deepfakes, understanding AI hallucinations, and maintaining professional credibility.</p>
@@ -201,8 +210,8 @@
     <section id="compare" class="section-block reveal">
       <h2>Compare: Original vs Altered</h2>
       <div class="img-compare" id="imgCompare">
-        <img src="images/ai-network-example.jpg" alt="Original" class="base" />
-        <div class="overlay"><img src="images/deepfake-example.jpg" alt="Altered" /></div>
+        <img src="images/AINetwork.png" alt="Original" class="base" />
+        <div class="overlay"><img src="images/DeepFakeEx.jpg" alt="Altered" /></div>
         <div class="handle" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
       </div>
     </section>
